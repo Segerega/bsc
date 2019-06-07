@@ -2131,8 +2131,8 @@ body.page-template-contact #page > .content-wrapper {
     cursor: pointer;
 }
 
-.innovation.plan span:before,
-.innovation.plan span:after {
+.innovation span:before,
+.innovation span:after {
     content: '';
     display: inline-block;
     top: 10px;
@@ -2143,12 +2143,12 @@ body.page-template-contact #page > .content-wrapper {
     background: #0A246A;
     position: absolute;
 }
-.innovation.plan span:after {
+.innovation span:after {
     right: 100px;
     left:auto;
 }
 
-.innovation.plan span {
+.innovation span {
     overflow: hidden;
     position: relative;
     margin: 0;
@@ -2174,9 +2174,9 @@ body.page-template-contact #page > .content-wrapper {
     color: #0a4382;
 }
 
-.plan-section + .innovation.plan span:before,
-.plan-section + .innovation.plan span:after {
-    color: #0a4382;
+.plan-section .innovation.plan span:before,
+.plan-section .innovation.plan span:after {
+    background-color: #0a4382;
 }
 
 .plan-section + .innovation.plan span {
@@ -2192,12 +2192,12 @@ body.page-template-contact #page > .content-wrapper {
     color: #1e85ce;
 }
 
-.write-section + .innovation.write span:before,
-.write-section + .innovation.write span:after {
-    color: #1e85ce;
+.write-section .innovation.write span:before,
+.write-section .innovation.write span:after {
+    background-color: #1e85ce;
 }
 
-.plan-section + .innovation.write span {
+.write-section .innovation.write span {
     color: #1e85ce;
 }
 
@@ -2211,12 +2211,12 @@ body.page-template-contact #page > .content-wrapper {
     color: #39a439;
 }
 
-.visualize-section + .innovation.visualize span:before,
-.visualize-section + .innovation.visualize span:after {
-    color: #39a439;
+.visualize-section .innovation.visualize span:before,
+.visualize-section .innovation.visualize span:after {
+    background-color: #39a439;
 }
 
-.visualize-section + .innovation.visualize span {
+.visualize-section .innovation.visualize span {
     color: #39a439;
 }
 
@@ -2231,11 +2231,11 @@ body.page-template-contact #page > .content-wrapper {
     color: #18727d;
 }
 
-.engage-section + .innovation.engage span:before,
-.engage-section + .innovation.engage span:after {
-    color: #18727d;
+.engage-section .innovation.engage span:before,
+.engage-section .innovation.engage span:after {
+    background-color: #18727d;
 }
 
-.engage-section + .innovation.engage span {
+.engage-section .innovation.engage span {
     color: #18727d;
 }

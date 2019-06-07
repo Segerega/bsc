@@ -80,7 +80,7 @@ get_header(); ?>
         </div>
 
         <div class="innovation write">
-            <h1>innovation</h1>
+            <span>Innovation</span>
         </div>
         <div class="what-we-do-img">
             <img class="pub" src="/resource/Images and video/logo_PUB_optix.svg" alt="">
@@ -133,8 +133,8 @@ get_header(); ?>
 
         </div>
 
-        <div class="innovation write">
-            <h1>innovation</h1>
+        <div class="innovation visualize">
+            <span>Innovation</span>
         </div>
         <div class="what-we-do-img">
             <img class="svg-logo" src="/resource/Images and video/logo_SVG.svg" alt="">
@@ -187,8 +187,8 @@ get_header(); ?>
             </div>
         </div>
 
-        <div class="innovation write">
-            <h1>innovation</h1>
+        <div class="innovation engage">
+            <span>Innovation</span>
         </div>
         <div class="what-we-do-img">
             <img class="expert" src="/resource/Images and video/logo_Expert_Optix.svg" alt="">

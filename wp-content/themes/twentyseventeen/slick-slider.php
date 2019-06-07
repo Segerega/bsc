@@ -15,42 +15,46 @@ $persons = get_posts($args);
         <? foreach ($persons as $person): ?>
             <div class="slider-item person-order-id-<?= $person->ID ?>"
                  data-person-id="<?= $person->ID ?>">
-                <div class="slider-item-wrapper clearfix">
-                    <div class="person-image"
-                         style="background-image: url('<?php echo get_the_post_thumbnail_url($person->ID) ?>')">
-                        <!--                        <img src="-->
-                        <?php //echo get_the_post_thumbnail_url($person->ID) ?><!--" alt="">-->
-                        <div class="person-image-second"
-                             style="background-image: url('<?php echo get_field('person_second_image', $person->ID)['url'] ?>')">
+                <div class="slider-item-wrapper ">
+                    <div class="slider-item-content clearfix">
+                        <div class="person-image"
+                             style="background-image: url('<?php echo get_the_post_thumbnail_url($person->ID) ?>')">
                             <!--                        <img src="-->
                             <?php //echo get_the_post_thumbnail_url($person->ID) ?><!--" alt="">-->
+                            <div class="person-image-second"
+                                 style="background-image: url('<?php echo get_field('person_second_image', $person->ID)['url'] ?>')">
+                                <!--                        <img src="-->
+                                <?php //echo get_the_post_thumbnail_url($person->ID) ?><!--" alt="">-->
+                            </div>
+                            <div class="person-image-second-overlay"></div>
+                            <div class="person-image-third"
+                                 style="background-image: url('<?php echo get_field('person_third_image', $person->ID)['url'] ?>')">
+                                <!--                        <img src="-->
+                                <?php //echo get_the_post_thumbnail_url($person->ID) ?><!--" alt="">-->
+                            </div>
                         </div>
-                        <div class="person-image-second-overlay"></div>
-                        <div class="person-image-third"
-                             style="background-image: url('<?php echo get_field('person_third_image', $person->ID)['url'] ?>')">
-                            <!--                        <img src="-->
-                            <?php //echo get_the_post_thumbnail_url($person->ID) ?><!--" alt="">-->
-                        </div>
-                    </div>
 
-                    <div class="text-slider-wrapper">
-                        <h3 class="person-name">
-                            <?= $person->post_title ?>
-                        </h3>
-                        <h4 class="person-title">
-                            <?= get_field('job_title', $person->ID) ?>
-                        </h4>
-                        <?= $person->post_content ?>
-                        <img src="<?= get_template_directory_uri() ?>/assets/images/close.svg " alt=""
-                             class="close-icon">
+                        <div class="text-slider-wrapper">
+                            <h3 class="person-name">
+                                <?= $person->post_title ?>
+                            </h3>
+                            <h4 class="person-title">
+                                <?= get_field('job_title', $person->ID) ?>
+                            </h4>
+                            <?= $person->post_content ?>
+                            <img src="<?= get_template_directory_uri() ?>/assets/images/close.svg " alt=""
+                                 class="close-icon">
+                        </div>
                     </div>
-                    <div class="title-bottom">
-                        <h3 class="person-name">
-                            <?= $person->post_title ?>
-                        </h3>
-                        <h4 class="person-title">
-                            <?= get_field('job_title', $person->ID) ?>
-                        </h4>
+                    <div class="slider-item-footer">
+                        <div class="title-bottom">
+                            <div class="person-name">
+                                <?= $person->post_title ?>
+                            </div>
+                            <div class="person-title">
+                                <?= get_field('short_job_title', $person->ID) ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,13 +93,14 @@ $persons = get_posts($args);
 
                     slide = $(this);
 
-                slider.slick("slickGoTo", slide.data('slick-index'));
-                slider.slick('setPosition');
 
-                slider.addClass('person-preview');
                 setTimeout(function () {
+                    slider.addClass('person-preview');
                     slider.slick("slickSetOption", "slidesToShow", 1, false);
                     slider.slick('setPosition');
+                    slider.slick("slickGoTo", slide.data('slick-index'));
+                    slider.slick('setPosition');
+
                 }, 500);
                 // slider.slick('slickFilter', function() {
                 //
@@ -108,8 +113,8 @@ $persons = get_posts($args);
 
             $('.close-icon').click(function () {
 
-                slider.removeClass('person-preview');
                 setTimeout(function () {
+                    slider.removeClass('person-preview');
                     slider.slick("slickSetOption", "slidesToShow", 6, false);
                     slider.slick('setPosition');
                 }, 500);
