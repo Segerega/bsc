@@ -1698,7 +1698,7 @@ BRANDING
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0);
     z-index: -1;
 }
 
@@ -1707,6 +1707,8 @@ BRANDING
     height: auto;
     position: absolute;
     z-index: -2;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .title-wrapper .title-description {
