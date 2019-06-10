@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="434acb13-2ec1-462d-8670-2435963ea804" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/images/LondonMap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/images/LondonMap_new.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/images/LondonMap_new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/images/NYC_map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/images/NYC_map_new.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/images/NYC_map_new.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,26 +41,26 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="2318" selection-start-line="2318" selection-end-line="2318" />
+            <state relative-caret-position="149">
+              <caret line="2324" column="1" lean-forward="true" selection-start-line="2324" selection-start-column="1" selection-end-line="2324" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="contact.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="390" column="83" selection-start-line="390" selection-start-column="83" selection-end-line="390" selection-end-column="83" />
+            <state relative-caret-position="15">
+              <caret line="288" column="42" lean-forward="true" selection-start-line="288" selection-start-column="42" selection-end-line="288" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="135">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -264,9 +269,9 @@
         <option value="&lt;a014b0ec-2afb-4219-8e2c-69ba4f115d6d&gt;/wp-content/themes/twentyseventeen/template-parts/header/video-header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/what-we-do.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/header/video-header.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/style.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/contact.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/contact.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/style.css" />
       </list>
     </option>
   </component>
@@ -432,12 +437,12 @@
       <workItem from="1559921128469" duration="2145000" />
       <workItem from="1560163314773" duration="13099000" />
       <workItem from="1560181879136" duration="8611000" />
-      <workItem from="1560200134244" duration="1483000" />
+      <workItem from="1560200134244" duration="2244000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97848000" />
+    <option name="totallyTimeSpent" value="98609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
@@ -596,24 +601,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="2318" selection-start-line="2318" selection-end-line="2318" />
+        <state relative-caret-position="149">
+          <caret line="2324" column="1" lean-forward="true" selection-start-line="2324" selection-start-column="1" selection-end-line="2324" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="390" column="83" selection-start-line="390" selection-start-column="83" selection-end-line="390" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="15">
+          <caret line="288" column="42" lean-forward="true" selection-start-line="288" selection-start-column="42" selection-end-line="288" selection-end-column="42" />
         </state>
       </provider>
     </entry>
