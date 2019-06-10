@@ -300,7 +300,7 @@ get_header(); ?>
     }
 
     .descripton-contact-wrapper {
-        padding-top: 200px;
+        padding-top: 64px;
         margin-top: -200px;
     }
 </style>
