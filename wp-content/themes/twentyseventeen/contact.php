@@ -1,10 +1,10 @@
 <?php /* Template Name: Contact */
 get_header(); ?>
 
-<div class="content-wrapper">
-    <div class="descripton-contact-wrapper">
+<div class="content-wrapper section-with-background" style="background-image: url('/wp-content/themes/twentyseventeen/assets/images/BKG_Contact.jpg'); background-position: cover"">
+    <h1 class="descripton-contact-wrapper">
         <h1 class="title-contact">For new business inquiries or if you'd like to join our team, drop us a line </h1>
-        <div class="content-wrapper">
+        <div class="content-wrapper contact-section">
             <div class="row">
                 <div class="col-sm-12 col-md-4 table-contact position contact-flex-column">
                     <a class="a-contact" href="#">
@@ -17,6 +17,7 @@ get_header(); ?>
                     <div class="text_col1"></div>
                     <div id="map-new-york"></div>
                 </div>
+
                 <div class="col position media-contact contact-flex-row">
                     <div class="title-contact-map">london</div>
                     <div class="description-contsct">105 Victoria Street<br>London SWIE 6QT. UK<br>+7.302.80346801</div>
@@ -24,7 +25,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-    </div>
+    </h1>
 </div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMTF4gLcdN0VFjAenar22NeTJfqUz4x4A&callback=initMap"
         async defer></script>
@@ -233,7 +234,7 @@ get_header(); ?>
         ]
     ;
     var newYork = {lat: 40.741051, lng: -74.005095};
-    var london = {lat: 51.497272, lng: -0.136857};
+    var london = {lat: 51.497272, lng: -0.1368576};
     var mapNY;
     var optionNY = {
         center: newYork,
@@ -276,6 +277,20 @@ get_header(); ?>
     /* Always set the mapNY height explicitly to define the size of the div
      * element that contains the mapNY. */
 
+</style>
+<style>
+    /*There style must be here*/
+    .section-with-background {
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 0px 0 60px;
+        min-height: 50vh;
+    }
+    .descripton-contact-wrapper{
+        padding-top: 200px;
+        margin-top: -200px;
+    }
 </style>
 <style>
     @media only screen and (max-width: 1150px) {
