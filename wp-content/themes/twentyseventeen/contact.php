@@ -3,9 +3,9 @@ get_header(); ?>
 
 <div class="content-wrapper section-with-background"
      style="background-image: url('/wp-content/themes/twentyseventeen/assets/images/BKG_Contact.jpg'); background-position: cover">
-    <div class="descripton-contact-wrapper">
-        <h1 class="title-contact">For new business inquiries or if you'd like to join our team, drop us a line </h1>
-    </div>
+<div class="descripton-contact-wrapper">
+    <h1 class="title-contact">For new business inquiries or if you'd like to join our team, drop us a line </h1>
+</div>
     <div class="content-wrapper contact-section">
         <div class="row">
             <div class="col-sm-12 col-md-4 table-contact position contact-flex-column">
@@ -31,12 +31,12 @@ get_header(); ?>
             </div>
         </div>
     </div>
-    <div class="map-wrapper">
-        <div id="map-new-york" class="ny-click"></div>
-        <div id="map-london" class="london-click"></div>
-    </div>
 </div>
-
+<div class="map-wrapper">
+    <img src="http://bsc.calceron.com/wp-content/themes/twentyseventeen/assets/images/close-black.svg " alt="" class="close-icon">
+    <div id="map-new-york" class="ny-click"></div>
+    <div id="map-london"  class="london-click"></div>
+</div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMTF4gLcdN0VFjAenar22NeTJfqUz4x4A&callback=initMap"
         async defer></script>
 <script>
@@ -244,8 +244,7 @@ get_header(); ?>
         ]
     ;
     var newYork = {lat: 40.741051, lng: -74.005095};
-    var london = {lat: 51.497272, lng: -0.1368576};
-
+    var london = {lat: 51.497272, lng: -0.136857};
     var mapNY;
     var optionNY = {
         center: newYork,
@@ -380,15 +379,14 @@ get_header(); ?>
         jQuery('.link-ny').on('click', function () {
             jQuery('.map-wrapper').toggleClass('open-map open-ny');
         });
-
-    });
-    jQuery(document).ready(function () {
         jQuery('.link-london').on('click', function () {
             jQuery('.map-wrapper').toggleClass('open-map open-london');
         });
+        jQuery('.map-wrapper .close-icon').on('click', function () {
+            jQuery('.map-wrapper').removeClass('open-map open-london open-ny');
+        });
 
     });
-
 </script>
 
 
