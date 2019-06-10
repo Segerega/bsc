@@ -38,24 +38,24 @@
         <video class="video VideoPane-video"
                poster="<?= get_template_directory_uri() ?>/assets/video/BKG_wwa_molecule.jpg"
                loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline"
-               src="<?= get_template_directory_uri() ?>/assets/video/BKG_wwa_molecule.mp4"
+               src="<?= get_template_directory_uri() ?>/assets/video/BKG_home_moleculer.mp4"
         >
         </video>
     <? endif ?>
 
     <? if ($post->post_name === 'what-we-do'): ?>
-        <iframe class="video VideoPane-video"
-                src="http://www.youtube.com/embed/y2jJ4r0KQgU?autoplay=1&loop=1&mute=1&playlist=y2jJ4r0KQgU&color=#ffffff"
-                allowfullscreen="0"
-                width="100%"
-                height="100%"
-                frameborder="0"></iframe>
-<!--        <video class="video VideoPane-video"-->
-<!--               poster="--><?//= get_template_directory_uri() ?><!--/assets/video/BKG_wwd_cell_move.jpg"-->
-<!--               loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline"-->
-<!--               src="--><?//= get_template_directory_uri() ?><!--/assets/video/BKG_wwd_cell_move.mp4"-->
-<!--        >-->
-<!--        </video>-->
+<!--        <iframe class="video VideoPane-video"-->
+<!--                src="http://www.youtube.com/embed/y2jJ4r0KQgU?autoplay=1&loop=1&mute=1&playlist=y2jJ4r0KQgU&color=#ffffff"-->
+<!--                allowfullscreen="0"-->
+<!--                width="100%"-->
+<!--                height="100%"-->
+<!--                frameborder="0"></iframe>-->
+        <video class="video VideoPane-video"
+               poster="<?= get_template_directory_uri() ?>/assets/video/BKG_wwd_cell_move.jpg"
+               loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline"
+               src="<?= get_template_directory_uri() ?>/assets/video/BKG_wwd_cel_ move.mp4"
+        >
+        </video>
     <? endif ?>
 
 </div>

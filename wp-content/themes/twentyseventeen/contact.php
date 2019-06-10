@@ -1,32 +1,42 @@
 <?php /* Template Name: Contact */
 get_header(); ?>
 
-<div class="content-wrapper section-with-background" style="background-image: url('/wp-content/themes/twentyseventeen/assets/images/BKG_Contact.jpg'); background-position: cover"">
-    <h1 class="descripton-contact-wrapper">
+<div class="content-wrapper section-with-background"
+     style="background-image: url('/wp-content/themes/twentyseventeen/assets/images/BKG_Contact.jpg'); background-position: cover">
+    <div class="descripton-contact-wrapper">
         <h1 class="title-contact">For new business inquiries or if you'd like to join our team, drop us a line </h1>
-        <div class="content-wrapper contact-section">
-            <div class="row">
-                <div class="col-sm-12 col-md-4 table-contact position contact-flex-column">
-                    <a class="a-contact" href="#">
-                        <div class="mail-contact">info@bioscicom.net</div>
-                    </a>
+    </div>
+    <div class="content-wrapper contact-section">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 table-contact position contact-flex-column">
+                <a class="a-contact" href="#">
+                    <div class="mail-contact">info@bioscicom.net</div>
+                </a>
+            </div>
+            <div class="col position media-contact contact-flex-column contact-flex-row">
+                <div class="title-contact-map">new york</div>
+                <div class="description-contsct">250 Hudson Street<br>New York. NY 10013. USA<br>+212.704.1000</div>
+                <div class="map-new-york-img link-ny">
+                    <img src="/wp-content/themes/twentyseventeen/assets/images/map-ny-new.PNG" alt="">
+                    <a class="link" href="#"></a>
                 </div>
-                <div class="col position media-contact contact-flex-column contact-flex-row">
-                    <div class="title-contact-map">new york</div>
-                    <div class="description-contsct">250 Hudson Street<br>New York. NY 10013. USA<br>+212.704.1000</div>
-                    <div class="text_col1"></div>
-                    <div id="map-new-york"></div>
-                </div>
+            </div>
 
-                <div class="col position media-contact contact-flex-row">
-                    <div class="title-contact-map">london</div>
-                    <div class="description-contsct">105 Victoria Street<br>London SWIE 6QT. UK<br>+7.302.80346801</div>
-                    <div id="map-london"></div>
+            <div class="col position media-contact contact-flex-row">
+                <div class="title-contact-map">london</div>
+                <div class="description-contsct">105 Victoria Street<br>London SWIE 6QT. UK<br>+7.302.80346801</div>
+                <div class="map-london-img link-london">
+                    <img src="/wp-content/themes/twentyseventeen/assets/images/map-london-new.PNG" alt="">
                 </div>
             </div>
         </div>
-    </h1>
+    </div>
+    <div class="map-wrapper">
+        <div id="map-new-york" class="ny-click"></div>
+        <div id="map-london" class="london-click"></div>
+    </div>
 </div>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMTF4gLcdN0VFjAenar22NeTJfqUz4x4A&callback=initMap"
         async defer></script>
 <script>
@@ -235,6 +245,7 @@ get_header(); ?>
     ;
     var newYork = {lat: 40.741051, lng: -74.005095};
     var london = {lat: 51.497272, lng: -0.1368576};
+
     var mapNY;
     var optionNY = {
         center: newYork,
@@ -287,7 +298,8 @@ get_header(); ?>
         padding: 0px 0 60px;
         min-height: 50vh;
     }
-    .descripton-contact-wrapper{
+
+    .descripton-contact-wrapper {
         padding-top: 200px;
         margin-top: -200px;
     }
@@ -297,13 +309,15 @@ get_header(); ?>
         .row {
             /*margin: 0 3%;*/
         }
-        .descripton-contact-wrapper{
+
+        .descripton-contact-wrapper {
             margin: 15px 3%;
         }
 
     }
+
     @media only screen and (max-width: 992px) {
-        h1{
+        h1 {
             font-size: 30px;
             /*margin: 0 1%;*/
         }
@@ -360,7 +374,24 @@ get_header(); ?>
     /*height: 80px;*/
     /*}*/
 </style>
-</body>
+
+<script>
+    jQuery(document).ready(function () {
+        jQuery('.link-ny').on('click', function () {
+            jQuery('.map-wrapper').toggleClass('open-map open-ny');
+        });
+
+    });
+    jQuery(document).ready(function () {
+        jQuery('.link-london').on('click', function () {
+            jQuery('.map-wrapper').toggleClass('open-map open-london');
+        });
+
+    });
+
+</script>
+
+
 <? get_footer(); ?>
 
 

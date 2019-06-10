@@ -1715,7 +1715,7 @@ BRANDING
 
 .video-wrapper .video {
     width: 120%;
-    height: 120%;
+    height: auto;
     position: absolute;
     z-index: -2;
     left: 50%;
@@ -1874,12 +1874,6 @@ section h2 {
     padding-bottom: 30px;
 }
 
-#map-new-york,
-#map-london {
-    min-height: 225px;
-    width: 100%;
-    border: 3px solid #aeadac;
-}
 
 #marker {
     height: 10000px;
@@ -1950,12 +1944,20 @@ body.page-template-contact{
         display: flex;
     }
 
+    #map-new-york,
+    #map-london {
+        /*min-height: 225px;*/
+        width: 100%;
+        height: 60vh;
+        border: 3px solid #aeadac;
+    }
+
     #map-new-york {
         position: relative;
         overflow: hidden;
         float: left;
         width: 100%;
-        height: 30%;
+        /*height: 50%;*/
     }
 
     #map-london {
@@ -2293,14 +2295,35 @@ body.page-template-contact #page > .content-wrapper {
     left: auto;
     transform: translateX(100%);
 }
-
-#page .content-description ul li {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.map-wrapper{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 100%;
+    transition: all .5s ease-in-out;
+    background-color: rgba(100,100,100,0.1);
+    
 }
-#page .content-description ul{
+#page .content-description ul {
     list-style: initial;
     display: block;
     float: none;
     margin-bottom: 30px;
+}
+#page .content-description ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.map-wrapper.open-map{
+    top: 0;
+}
+
+#map-london,
+#map-new-york{
+    top: 200%;
+}
+.open-map.open-london #map-london,
+.open-map.open-ny #map-new-york{
+    top: 40%;
 }
