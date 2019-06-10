@@ -249,14 +249,15 @@ get_header(); ?>
     var optionNY = {
         center: newYork,
         zoom: 15,
-        mapTypeControl: false,
-        draggable: false,
+        zoomControl: true,
+        mapTypeControl: true,
+        draggable: true,
         scaleControl: false,
-        scrollwheel: false,
+        scrollwheel: true,
         navigationControl: false,
         streetViewControl: false,
         styles: styles,
-        fullscreenControl: false
+        fullscreenControl: true
     };
     var optionLondon;
     optionLondon = Object.assign({}, optionNY);
