@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="434acb13-2ec1-462d-8670-2435963ea804" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/contact.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/style.css" afterDir="false" />
     </list>
@@ -36,8 +35,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="2327" column="44" lean-forward="true" selection-start-line="2327" selection-start-column="44" selection-end-line="2327" selection-end-column="44" />
+            <state relative-caret-position="690">
+              <caret line="2359" column="30" selection-start-line="2359" selection-start-column="30" selection-end-line="2359" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -45,8 +44,8 @@
       <file leaf-file-name="contact.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+            <state relative-caret-position="467">
+              <caret line="35" column="91" selection-start-line="35" selection-start-column="91" selection-end-line="35" selection-end-column="91" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -285,8 +284,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1" />
-    <option name="y" value="-1091" />
+    <option name="x" value="-1921" />
+    <option name="y" value="-11" />
     <option name="width" value="1922" />
     <option name="height" value="1092" />
   </component>
@@ -434,12 +433,12 @@
       <workItem from="1559834857985" duration="19424000" />
       <workItem from="1559921128469" duration="2145000" />
       <workItem from="1560163314773" duration="13099000" />
-      <workItem from="1560181879136" duration="5858000" />
+      <workItem from="1560181879136" duration="8611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93612000" />
+    <option name="totallyTimeSpent" value="96365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
@@ -607,8 +606,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        <state relative-caret-position="467">
+          <caret line="35" column="91" selection-start-line="35" selection-start-column="91" selection-end-line="35" selection-end-column="91" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -617,8 +616,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="2327" column="44" lean-forward="true" selection-start-line="2327" selection-start-column="44" selection-end-line="2327" selection-end-column="44" />
+        <state relative-caret-position="690">
+          <caret line="2359" column="30" selection-start-line="2359" selection-start-column="30" selection-end-line="2359" selection-end-column="30" />
         </state>
       </provider>
     </entry>

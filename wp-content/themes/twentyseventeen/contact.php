@@ -33,9 +33,9 @@ get_header(); ?>
     </div>
 </div>
 <div class="map-wrapper">
-    <img src="http://bsc.calceron.com/wp-content/themes/twentyseventeen/assets/images/close-black.svg " alt="" class="close-icon">
-    <div id="map-new-york" class="ny-click"></div>
-    <div id="map-london"  class="london-click"></div>
+    <img src="http://bsc.calceron.com/wp-content/themes/twentyseventeen/assets/images/close.svg " alt="" class="close-icon">
+    <div id="map-new-york" class="ny-click map-container"></div>
+    <div id="map-london"  class="london-click map-container"></div>
 </div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMTF4gLcdN0VFjAenar22NeTJfqUz4x4A&callback=initMap"
         async defer></script>
@@ -377,9 +377,11 @@ get_header(); ?>
 
 <script>
     jQuery(document).ready(function () {
+
         jQuery('.link-ny').on('click', function () {
             jQuery('.map-wrapper').toggleClass('open-map open-ny');
         });
+
         jQuery('.link-london').on('click', function () {
             jQuery('.map-wrapper').toggleClass('open-map open-london');
         });

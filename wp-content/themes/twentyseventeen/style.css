@@ -1854,10 +1854,6 @@ section h2 {
     color: #000000;
 }
 
-header,
-footer {
-    margin: 0 5%;
-}
 
 .row.section-footer {
     bottom: 0;
@@ -2323,10 +2319,11 @@ body.page-template-contact #page > .content-wrapper {
     bottom: 0;
     right: 0;
     top: 100%;
-    background-color: rgba(183, 183, 183, 0.25);
+    background-color: rgb(3, 96, 109);
     z-index: 999999;
     box-shadow: 0px -14px 120px 0px #9e9e9ec2;
     transition: all .25s ease-in-out;
+    border-top: 1px solid #c7c7c7;
 }
 
 #page .content-description ul {
@@ -2340,24 +2337,27 @@ body.page-template-contact #page > .content-wrapper {
     margin-bottom: 10px;
 }
 .map-wrapper.open-map{
-    top: 0;
+    top: 45%;
 }
 
 #map-london,
 #map-new-york{
     top: 200%;
+    position: absolute!important;
 }
 .open-map.open-london #map-london,
 .open-map.open-ny #map-new-york{
-    top: 40%;
+    top: 32px;
     height: 100%;
 }
 .map-wrapper .close-icon{
-    width: 35px;
+    height: 32px;
     position: absolute;
-    top: 20px;
-    right: 35px;
+    top: 0;
+    right: 0;
     cursor: pointer;
+    padding: 6px;
+    background-color: #353535;
 }
 .media-contact{
     cursor: pointer;
