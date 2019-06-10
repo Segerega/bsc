@@ -1384,6 +1384,16 @@ a .nav-title,
     display: none;
 }
 
+.site-header{
+    transition: all .3s ease-in-out;
+}
+
+.site-header.fixed{
+    background-color: #fffffff7;
+    box-shadow: 0px 4px 13px 0px #c3c3c369;
+
+}
+
 /*--------------------------------------------------------------
 13.0 Layout
 --------------------------------------------------------------*/
@@ -1627,6 +1637,7 @@ BRANDING
 .scroll-to {
     position: absolute;
     bottom: 60px;
+    cursor: pointer;
     z-index: 999;
     left: 50%;
     transform: translateX(-50%);
@@ -1704,7 +1715,7 @@ BRANDING
 
 .video-wrapper .video {
     width: 120%;
-    height: auto;
+    height: 120%;
     position: absolute;
     z-index: -2;
     left: 50%;
@@ -1841,11 +1852,6 @@ section h2 {
 
 .menu-item-18 a:hover {
     color: #000000;
-}
-
-header,
-footer {
-    margin: 0 5%;
 }
 
 .row.section-footer {
@@ -2074,6 +2080,7 @@ body.page-template-contact #page > .content-wrapper {
 
 .innovation {
     margin-bottom: 35px;
+    overflow: hidden;
 }
 
 #clickme1 img,
@@ -2106,13 +2113,13 @@ body.page-template-contact #page > .content-wrapper {
 .innovation-block{
     background-color: #e1f1e3;
     padding: 60px;
-    margin: 0;
     position: relative;
-    top: -110px;
+    top: -210px;
+    margin: 0;
 }
 .email-logo img{
-    height: 60px;
-    width:60px;
+    height: 65px;
+    width:65px;
 }
 .email-link{
     color: #404040;
@@ -2131,8 +2138,8 @@ body.page-template-contact #page > .content-wrapper {
 }
 .innovation-block .content-wrapper .close-icon{
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     top: 20px;
     right: 20px;
     cursor: pointer;

@@ -19,11 +19,11 @@ get_header(); ?>
                 <p>Science narrative</p>
                 <p>Scientific issues consultancy </p>
             </div>
+            <div class="innovation plan">
+                <span>Innovation</span>
+            </div>
         </div>
 
-        <div class="innovation plan">
-            <span>Innovation</span>
-        </div>
         <div class="what-we-do-img">
             <img class="more-workshop" src="/resource/Images and video/logo_MORE_workshop.svg" alt="">
         </div>
@@ -31,6 +31,7 @@ get_header(); ?>
             <img src="/resource/Images and video/btn_plus.png" alt="">
         </div>
     </section>
+
     <div class="innovation-block" style="display: none">
         <div class="content-wrapper">
             <img src="<?= get_template_directory_uri() ?>/assets/images/close-black.svg " alt=""
@@ -76,11 +77,9 @@ get_header(); ?>
                 <p>Medical and technical writing</p>
                 <p>White papers </p>
             </div>
-
-        </div>
-
-        <div class="innovation write">
-            <span>Innovation</span>
+            <div class="innovation write">
+                <span>Innovation</span>
+            </div>
         </div>
         <div class="what-we-do-img">
             <img class="pub" src="/resource/Images and video/logo_PUB_optix.svg" alt="">
@@ -130,12 +129,12 @@ get_header(); ?>
                 <p>Booths and exhibits</p>
                 <p>Infographics </p>
             </div>
-
+            <div class="innovation visualize">
+                <span>Innovation</span>
+            </div>
         </div>
 
-        <div class="innovation visualize">
-            <span>Innovation</span>
-        </div>
+
         <div class="what-we-do-img">
             <img class="svg-logo" src="/resource/Images and video/logo_SVG.svg" alt="">
         </div>
@@ -185,11 +184,12 @@ get_header(); ?>
                 <p>FDA advisory committee preparation</p>
                 <p>Congress and symposia support </p>
             </div>
+            <div class="innovation engage">
+                <span>Innovation</span>
+            </div>
         </div>
 
-        <div class="innovation engage">
-            <span>Innovation</span>
-        </div>
+
         <div class="what-we-do-img">
             <img class="expert" src="/resource/Images and video/logo_Expert_Optix.svg" alt="">
         </div>
