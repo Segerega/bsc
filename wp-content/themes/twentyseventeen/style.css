@@ -2244,9 +2244,6 @@ body.page-template-contact #page > .content-wrapper {
     color: #39a439;
 }
 
-
-
-
 .engage-section h2{
     color: #18727d;
 }
@@ -2269,6 +2266,7 @@ body.page-template-contact #page > .content-wrapper {
     font-size: 53px;
     font-weight: 400;
 }
+
 .title-frivacy-policy h2{
     margin-bottom: 0;
 }
@@ -2299,11 +2297,13 @@ body.page-template-contact #page > .content-wrapper {
     position: absolute;
     transform: translateX(-100%);
 }
+
 .last-updated span:after {
     right: -14px;
     left: auto;
     transform: translateX(100%);
 }
+
 .ny-click, .london-click{
     overflow: hidden;
     position: fixed;
@@ -2319,11 +2319,9 @@ body.page-template-contact #page > .content-wrapper {
     bottom: 0;
     right: 0;
     top: 100%;
-    background-color: rgb(3, 96, 109);
     z-index: 999999;
-    box-shadow: 0px -14px 120px 0px #9e9e9ec2;
+    /*box-shadow: 0px 8px 50px 0px #9e9e9ec2;*/
     transition: all .25s ease-in-out;
-    border-top: 1px solid #c7c7c7;
 }
 
 #page .content-description ul {
@@ -2332,24 +2330,27 @@ body.page-template-contact #page > .content-wrapper {
     float: none;
     margin-bottom: 30px;
 }
+
 #page .content-description ul li {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 .map-wrapper.open-map{
-    top: 45%;
+    top: 0;
 }
 
 #map-london,
 #map-new-york{
     top: 200%;
-    position: absolute!important;
+    position: absolute !important;
 }
+
 .open-map.open-london #map-london,
 .open-map.open-ny #map-new-york{
-    top: 32px;
-    height: 100%;
+    top: auto;
+    height: 400px;
 }
+
 .map-wrapper .close-icon{
     height: 32px;
     position: absolute;
@@ -2359,6 +2360,7 @@ body.page-template-contact #page > .content-wrapper {
     padding: 6px;
     background-color: #353535;
 }
+
 .media-contact{
     cursor: pointer;
 }

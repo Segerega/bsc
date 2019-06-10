@@ -33,7 +33,7 @@ get_header(); ?>
     </div>
 </div>
 <div class="map-wrapper">
-    <img src="http://bsc.calceron.com/wp-content/themes/twentyseventeen/assets/images/close.svg " alt="" class="close-icon">
+<!--    <img src="http://bsc.calceron.com/wp-content/themes/twentyseventeen/assets/images/close.svg " alt="" class="close-icon">-->
     <div id="map-new-york" class="ny-click map-container"></div>
     <div id="map-london"  class="london-click map-container"></div>
 </div>
@@ -385,8 +385,11 @@ get_header(); ?>
         jQuery('.link-london').on('click', function () {
             jQuery('.map-wrapper').toggleClass('open-map open-london');
         });
-        jQuery('.map-wrapper .close-icon').on('click', function () {
-            jQuery('.map-wrapper').removeClass('open-map open-london open-ny');
+        jQuery('.map-wrapper').on('click', function (e) {
+            console.log(e)
+            if(jQuery(e.target).is('.map-wrapper')){
+                jQuery('.map-wrapper').removeClass('open-map open-london open-ny');
+            };
         });
 
     });
