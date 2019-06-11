@@ -41,6 +41,12 @@
                src="<?= get_template_directory_uri() ?>/assets/video/BKG_home_moleculer.mp4"
         >
         </video>
+<!--        <video class="video VideoPane-video"-->
+<!--               poster="--><?//=get_field('video_1', $post->ID)['url']?><!--"-->
+<!--               loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline"-->
+<!--               src="--><?//=get_field('video_1', $post->ID)?><!--"-->
+<!--        >-->
+<!--        </video>-->
     <? endif ?>
 
     <? if ($post->post_name === 'what-we-do'): ?>

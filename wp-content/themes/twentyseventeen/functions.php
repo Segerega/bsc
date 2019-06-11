@@ -629,19 +629,3 @@ function my_dashicons() {
     wp_enqueue_style( 'dashicons' );
 }
 add_action( 'wp_enqueue_scripts', 'my_dashicons' );
-
-
-
-
-
-
-/**
- * Allow SVG files in Media Library.
- */
-function extra_mime_types( $mimes ) {
-
-    $mimes['svg'] = 'image/svg+xml';
-
-    return $mimes;
-}
-add_filter( 'upload_mimes', 'extra_mime_types' );

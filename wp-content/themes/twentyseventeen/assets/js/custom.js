@@ -14,6 +14,20 @@
             t >= 100 ? $("#masthead").addClass("fixed") : $("#masthead").removeClass("fixed")
         })
 
+        $(".open-innovation-wrapper").click(function () {
+            $(this).closest("section").find('.innovation-block').slideDown("slow");
+            $(this).closest("section").find('.open-innovation-wrapper').slideUp("slow");
+            $(this).closest("section").addClass('opened');
+        });
+
+        $(".close-icon").click(function () {
+            $(this).closest("section").find('.innovation-block ').slideUp("slow");
+            $(this).closest("section").find('.open-innovation-wrapper').slideDown("slow");
+            $(this).closest("section").removeClass('opened');
+
+        });
+
+
     });
 
 })( jQuery );

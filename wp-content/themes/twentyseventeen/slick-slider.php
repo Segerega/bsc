@@ -19,18 +19,12 @@ $persons = get_posts($args);
                     <div class="slider-item-content clearfix">
                         <div class="person-image"
                              style="background-image: url('<?php echo get_the_post_thumbnail_url($person->ID) ?>')">
-                            <!--                        <img src="-->
-                            <?php //echo get_the_post_thumbnail_url($person->ID) ?><!--" alt="">-->
                             <div class="person-image-second"
                                  style="background-image: url('<?php echo get_field('person_second_image', $person->ID)['url'] ?>')">
-                                <!--                        <img src="-->
-                                <?php //echo get_the_post_thumbnail_url($person->ID) ?><!--" alt="">-->
                             </div>
                             <div class="person-image-second-overlay"></div>
                             <div class="person-image-third"
                                  style="background-image: url('<?php echo get_field('person_third_image', $person->ID)['url'] ?>')">
-                                <!--                        <img src="-->
-                                <?php //echo get_the_post_thumbnail_url($person->ID) ?><!--" alt="">-->
                             </div>
                         </div>
 

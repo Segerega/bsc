@@ -16,7 +16,7 @@ get_header(); ?>
             <div class="col position media-contact contact-flex-column contact-flex-row link-ny">
                 <div class="title-contact-map">new york</div>
                 <div class="description-contsct">250 Hudson Street<br>New York. NY 10013. USA<br>+212.704.1000</div>
-                <div class="map-new-york-img link-ny">
+                <div class="map-new-york-img">
                     <img class="img-map" src="/wp-content/themes/twentyseventeen/assets/images/NYC_map_new.jpg" alt="">
                     <a class="link" href="#"></a>
                 </div>
@@ -26,7 +26,7 @@ get_header(); ?>
                 <div class="title-contact-map">london</div>
                 <div class="description-contsct">105 Victoria Street<br>London SWIE 6QT. UK<br>+7.302.80346801</div>
 
-                <div class="map-london-img link-london">
+                <div class="map-london-img">
                     <img class="img-map" src="/wp-content/themes/twentyseventeen/assets/images/LondonMap_new.jpg" alt="">
                 </div>
             </div>
@@ -34,9 +34,30 @@ get_header(); ?>
     </div>
 </div>
 <div class="map-wrapper">
-    <div id="map-new-york" class="ny-click map-container"></div>
+    <div id="map-new-york" class="ny-click  map-container"></div>
     <div id="map-london"  class="london-click map-container"></div>
 </div>
+
+<script>
+
+    jQuery(document).ready(function () {
+        jQuery('.link-ny').on('click', function () {
+            jQuery('.map-wrapper').toggleClass('open-map open-ny');
+        });
+
+        jQuery('.link-london').on('click', function () {
+            jQuery('.map-wrapper').toggleClass('open-map open-london');
+        });
+
+        jQuery('.map-wrapper').on('click', function (e) {
+            if(jQuery(e.target).is('.map-wrapper')){
+                jQuery('.map-wrapper').removeClass('open-map open-london open-ny');
+            };
+        });
+
+    });
+</script>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMTF4gLcdN0VFjAenar22NeTJfqUz4x4A&callback=initMap"
         async defer></script>
 <script>
@@ -366,35 +387,7 @@ get_header(); ?>
         font-size: 25px;
     }
 
-    /*.footer-contact{*/
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*bottom: 0;*/
-    /*width: 100%;*/
-    /*height: 80px;*/
-    /*}*/
 </style>
-
-<script>
-    jQuery(document).ready(function () {
-
-        jQuery('.link-ny').on('click', function () {
-            jQuery('.map-wrapper').toggleClass('open-map open-ny');
-        });
-
-        jQuery('.link-london').on('click', function () {
-            jQuery('.map-wrapper').toggleClass('open-map open-london');
-        });
-        jQuery('.map-wrapper').on('click', function (e) {
-            console.log(e)
-            if(jQuery(e.target).is('.map-wrapper')){
-                jQuery('.map-wrapper').removeClass('open-map open-london open-ny');
-            };
-        });
-
-    });
-</script>
-
 
 <? get_footer(); ?>
 
