@@ -13,27 +13,27 @@ get_header(); ?>
                     <div class="mail-contact">info@bioscicom.net</div>
                 </a>
             </div>
-            <div class="col position media-contact contact-flex-column contact-flex-row">
+            <div class="col position media-contact contact-flex-column contact-flex-row link-ny">
                 <div class="title-contact-map">new york</div>
                 <div class="description-contsct">250 Hudson Street<br>New York. NY 10013. USA<br>+212.704.1000</div>
-                <div class="map-new-york-img link-ny">
-                    <img src="/wp-content/themes/twentyseventeen/assets/images/map-ny-new.PNG" alt="">
+                <div class="map-new-york-img">
+                    <img src="/wp-content/themes/twentyseventeen/assets/images/NYC_map_new.jpg" alt="">
+
                     <a class="link" href="#"></a>
                 </div>
             </div>
 
-            <div class="col position media-contact contact-flex-row">
+            <div class="col position media-contact contact-flex-row link-london">
                 <div class="title-contact-map">london</div>
                 <div class="description-contsct">105 Victoria Street<br>London SWIE 6QT. UK<br>+7.302.80346801</div>
-                <div class="map-london-img link-london">
-                    <img src="/wp-content/themes/twentyseventeen/assets/images/map-london-new.PNG" alt="">
+                <div class="map-london-img">
+                    <img src="/wp-content/themes/twentyseventeen/assets/images/LondonMap_new.jpg" alt="">
                 </div>
             </div>
         </div>
     </div>
 </div>
 <div class="map-wrapper">
-<!--    <img src="http://bsc.calceron.com/wp-content/themes/twentyseventeen/assets/images/close.svg " alt="" class="close-icon">-->
     <div id="map-new-york" class="ny-click map-container"></div>
     <div id="map-london"  class="london-click map-container"></div>
 </div>

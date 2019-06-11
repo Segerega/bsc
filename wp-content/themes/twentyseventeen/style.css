@@ -2320,8 +2320,6 @@ body.page-template-contact #page > .content-wrapper {
     right: 0;
     top: 100%;
     z-index: 999999;
-    /*box-shadow: 0px 8px 50px 0px #9e9e9ec2;*/
-    transition: all .25s ease-in-out;
 }
 
 #page .content-description ul {
@@ -2343,12 +2341,13 @@ body.page-template-contact #page > .content-wrapper {
 #map-new-york{
     top: 200%;
     position: absolute !important;
+    transition: all .25s ease-in-out;
+    height: 100%;
 }
 
 .open-map.open-london #map-london,
 .open-map.open-ny #map-new-york{
-    top: auto;
-    height: 400px;
+    top: 60%;
 }
 
 .map-wrapper .close-icon{

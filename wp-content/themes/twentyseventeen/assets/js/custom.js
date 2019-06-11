@@ -10,8 +10,6 @@
         });
 
         $(window).scroll(function () {
-            console.log(33333);
-
             var t = $(window).scrollTop();
             t >= 100 ? $("#masthead").addClass("fixed") : $("#masthead").removeClass("fixed")
         })
