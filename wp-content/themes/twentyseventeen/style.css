@@ -2208,6 +2208,7 @@ body.page-template-contact #page > .content-wrapper {
 }
 
 
+
 .write-section h2{
     color: #1e85ce;
 }
@@ -2362,4 +2363,7 @@ body.page-template-contact #page > .content-wrapper {
 
 .media-contact{
     cursor: pointer;
+}
+.img-map{
+    border: 2px solid #999999;
 }
