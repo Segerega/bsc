@@ -5,7 +5,7 @@
             var $this = $(this),
                 $scrollToElement = $($this.data('scroll-to'));
             $('body, html').animate({
-                scrollTop: $scrollToElement.offset().top
+                scrollTop: $scrollToElement.offset().top - 50
             }, 500);
         });
 
