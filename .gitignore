@@ -7,7 +7,7 @@
 ._js
 /css/.sass-cache
 /.htaccess
-/.idea
+/.idea/*
 .idea
 /.idea/workspace.xml
 /.idea/deployment.xml
