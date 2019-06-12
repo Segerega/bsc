@@ -1215,9 +1215,8 @@ a .nav-title,
 }
 
 .navigation-top .menu-item > a {
-    padding-top: 30px;
+    padding-top: 12px;
     border-top: 10px solid transparent;
-
 }
 
 .navigation-top .menu-item.current_page_item > a {
@@ -1384,11 +1383,11 @@ a .nav-title,
     display: none;
 }
 
-.site-header{
+.site-header {
     transition: all .3s ease-in-out;
 }
 
-.site-header.fixed{
+.site-header.fixed {
     background-color: #fffffff7;
     box-shadow: 0px 4px 13px 0px #c3c3c369;
 
@@ -1688,7 +1687,7 @@ BRANDING
 
 .first-section h2 {
     color: #15717b;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .video-wrapper {
@@ -1825,10 +1824,10 @@ section h2 {
 }
 
 .content-wrapper h2 + h3 {
-    margin-top: -20px;
+    margin-top: 0px;
     padding-top: 0;
+    font-size: 32px;
     margin-bottom: 20px;
-
 }
 
 .textwidget span {
@@ -1850,7 +1849,6 @@ section h2 {
 .menu-item-18 a:hover {
     color: #000000;
 }
-
 
 .row.section-footer {
     bottom: 0;
@@ -1887,9 +1885,11 @@ html, body {
     margin: 0;
     padding: 0;
 }
-body.page-template-contact{
+
+body.page-template-contact {
     min-height: 100vh;
 }
+
 .wrap-site {
     margin: 5%;
     min-height: calc(100vh - 80px);
@@ -1981,6 +1981,63 @@ body.page-template-contact{
 
     .title-contact {
         margin: 15px 5%;
+        font-size: 21px;
+    }
+
+    .img-map:last-child {
+        margin-top: 25px;
+    }
+.title-description-who-we-are{
+    margin-bottom: 0;
+}
+.description{
+    font-size: 14px;
+    margin: 0 5px;
+}
+    .video-wrapper{
+        height: 255px;
+    }
+    .second-section{
+        padding: 0;
+    }
+    .second-section{
+        padding: 0;
+    }
+    #first-section{
+        padding: 20px 0;
+    }
+    .animation-words.title {
+        font-size: 31px;
+        margin-bottom: 0;
+    }
+    .innovation span:before,
+    .innovation span:after{
+        width: 100px !important;
+    }
+
+    .title-description-what-we-do {
+        margin-bottom: 0;
+    }
+
+
+    .description p {
+        font-size: 14px;
+    }
+
+    .scroll-to {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        top: 26px;
+    }
+    section h2{
+        font-size: 31px;
+    }
+.first-section h2{
+    font-size: 31px;
+}
+    .title-wrapper .title-description {
+        font-size: 14px;
     }
 
     .media-contact {
@@ -2095,7 +2152,7 @@ body.page-template-contact #page > .content-wrapper {
     width: 170px;
 }
 
-section.section-with-background{
+section.section-with-background {
     transition: all .25s ease-in-out;
 }
 
@@ -2103,38 +2160,42 @@ section.opened.section-with-background {
     padding-bottom: 0px;
 }
 
-.open-innovation-block{
+.open-innovation-block {
     margin-top: 30px;
     margin-bottom: 30px;
     cursor: pointer;
 }
-.innovation-block{
+
+.innovation-block {
     background-color: #e1f1e3;
     padding: 60px;
     position: relative;
     margin: 0 -3000px;
 }
-.email-logo img{
+
+.email-logo img {
     height: 65px;
-    width:65px;
+    width: 65px;
 }
-.email-link{
+
+.email-link {
     color: #404040;
     font-size: 22px;
     font-weight: bold;
     text-decoration: underline;
 }
 
-
-.scivizgroup-logo{
+.scivizgroup-logo {
     max-height: 50px;
     margin-bottom: 30px;
 }
-.innovation-block .content-wrapper{
+
+.innovation-block .content-wrapper {
     position: relative;
     text-align: center;
 }
-.innovation-block .content-wrapper .close-icon{
+
+.innovation-block .content-wrapper .close-icon {
     position: absolute;
     width: 35px;
     height: 35px;
@@ -2155,9 +2216,10 @@ section.opened.section-with-background {
     background: #0A246A;
     position: absolute;
 }
+
 .innovation span:after {
     right: 100px;
-    left:auto;
+    left: auto;
 }
 
 .innovation span {
@@ -2173,12 +2235,12 @@ section.opened.section-with-background {
     margin-block-end: 0;
 }
 
-.page-template-what-we-do section h2{
+.page-template-what-we-do section h2 {
     text-transform: uppercase;
     font-size: 68px;
 }
 
-.plan-section h2{
+.plan-section h2 {
     color: #0a4382;
 }
 
@@ -2195,7 +2257,7 @@ section.opened.section-with-background {
     color: #0a4382;
 }
 
-.write-section h2{
+.write-section h2 {
     color: #1e85ce;
 }
 
@@ -2212,7 +2274,7 @@ section.opened.section-with-background {
     color: #1e85ce;
 }
 
-.visualize-section h2{
+.visualize-section h2 {
     color: #39a439;
 }
 
@@ -2229,7 +2291,7 @@ section.opened.section-with-background {
     color: #39a439;
 }
 
-.engage-section h2{
+.engage-section h2 {
     color: #18727d;
 }
 
@@ -2245,6 +2307,7 @@ section.opened.section-with-background {
 .engage-section .innovation.engage span {
     color: #18727d;
 }
+
 .title-frivacy-policy {
     color: #003072;
     text-align: center;
@@ -2252,11 +2315,11 @@ section.opened.section-with-background {
     font-weight: 400;
 }
 
-.title-frivacy-policy h2{
+.title-frivacy-policy h2 {
     margin-bottom: 0;
 }
 
-.last-updated{
+.last-updated {
     text-align: center;
     color: #999999;
     font-size: 20px;
@@ -2266,7 +2329,7 @@ section.opened.section-with-background {
     text-transform: uppercase;
 }
 
-.last-updated span{
+.last-updated span {
     position: relative;
 }
 
@@ -2289,16 +2352,17 @@ section.opened.section-with-background {
     transform: translateX(100%);
 }
 
-.ny-click, .london-click{
+.ny-click, .london-click {
     overflow: hidden;
     position: fixed;
     left: 0;
     right: 0;
     top: 40%;
     bottom: 0;
-    z-index:9999;
+    z-index: 9999;
 }
-.map-wrapper{
+
+.map-wrapper {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -2318,12 +2382,13 @@ section.opened.section-with-background {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.map-wrapper.open-map{
+
+.map-wrapper.open-map {
     top: 0;
 }
 
 #map-london,
-#map-new-york{
+#map-new-york {
     top: 200%;
     position: absolute !important;
     transition: all .25s ease-in-out;
@@ -2331,11 +2396,11 @@ section.opened.section-with-background {
 }
 
 .open-map.open-london #map-london,
-.open-map.open-ny #map-new-york{
+.open-map.open-ny #map-new-york {
     top: 60%;
 }
 
-.map-wrapper .close-icon{
+.map-wrapper .close-icon {
     height: 32px;
     position: absolute;
     top: 0;
@@ -2345,24 +2410,27 @@ section.opened.section-with-background {
     background-color: #353535;
 }
 
-.media-contact{
+.media-contact {
     cursor: pointer;
 }
-.img-map{
+
+.img-map {
     border: 2px solid #999999;
 }
-.person-slider{
+
+.person-slider {
     transition: all .25s ease-in-out;
 }
 
-.person-slider:not(.slick-initialized){
+.person-slider:not(.slick-initialized) {
     opacity: 0;
 }
 
 #page .description ul {
     display: block;
-    float:none;
+    float: none;
 }
+
 .description ul > li {
     color: #003473;
     text-align: center;
@@ -2371,6 +2439,7 @@ section.opened.section-with-background {
     margin-bottom: 0;
     font-size: 18px;
 }
+
 body #page, body footer{
     opacity: 0;
     transition: all .5s ease-in-out;
@@ -2408,4 +2477,40 @@ footer{
 
 .arrow-up-img {
     transform: rotate(180deg);
+}
+footer {
+    margin-bottom: 15px;
+}
+
+.copyright{
+    font-style: italic;
+    font-size: 13px;
+}
+.second-section.section-with-background{
+    padding: 0;
+}
+.animation-words.title{
+    line-height: 1;
+
+}
+section h2{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.description{
+    line-height: 1.5;
+    font-size: 22px;
+}
+.btn.btn-success{
+    font-weight: 600;
+    padding: 13px 40px;
+    font-size: 22px;
+    border-radius: 0;
+}
+.title-description-who-we-are{
+    font-size: 51px;
+}
+.animation-words.title{
+    margin-bottom: 5px;
 }

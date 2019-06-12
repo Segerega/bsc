@@ -19,7 +19,7 @@ $weDos = get_posts($args); ?>
             <section class="<?= strtolower($weDo->post_title) ?>-section text-center section-with-background"
                      style="background-image: url(<?= get_field('background', $weDo->ID)['url'] ?>);">
                 <div class="content-wrapper">
-                    <h2><?= $weDo->post_title ?></h2>
+                    <h2 class="title-description-what-we-do"><?= $weDo->post_title ?></h2>
                     <div class="description"><?= $weDo->post_content ?></div>
                     <br>
 

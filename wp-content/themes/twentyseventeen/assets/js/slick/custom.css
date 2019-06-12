@@ -43,8 +43,9 @@
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    padding: 120px 0 30px;
+    /*padding: 120px 0 30px;*/
     min-height: 50vh;
+    margin-top: 10px;
 }
 
 .person-slider .slick-list.draggable {

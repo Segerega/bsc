@@ -15,9 +15,10 @@ get_header(); ?>
             </div>
             <div class="col position media-contact contact-flex-column contact-flex-row link-ny">
                 <div class="title-contact-map">new york</div>
-                <div class="description-contsct">250 Hudson Street<br>New York. NY 10013. USA<br>+212.704.1000</div>
+                <div class="description-contsct">250 Hudson Street<br>New York. NY 10013. USA<br>+212.704.1000</)div>
                 <div class="map-new-york-img">
                     <img class="img-map" src="/wp-content/themes/twentyseventeen/assets/images/NYC_map_new.jpg" alt="">
+                    <div class="img-map"></div>
                     <a class="link" href="#"></a>
                 </div>
             </div>
