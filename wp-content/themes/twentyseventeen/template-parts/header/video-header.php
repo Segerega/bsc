@@ -23,14 +23,3 @@
         >
         </video>
 </div>
-<script>
-    (function($) {
-        $(document).ready(function(){
-
-            $(window).load(function () {
-               $('body').addClass('site-loaded');
-            });
-        });
-
-    })( jQuery );
-</script>

@@ -10,6 +10,11 @@
 
 ?>
 <div class="row section-footer">
+
+    <a class='scroll-to scroll-to-first-section' data-scroll-to="#first-section">
+        <img class='arrow-up-img ' src="/resource/Images and video/btn_arrow_down.svg" alt="">
+    </a>
+
     <div class="col col-sm-12 navigation-top">
         <?php if ( ( twentyseventeen_is_frontpage() || ( is_home() && is_front_page() ) ) && has_custom_header() ) : ?>
             <a  class="scroll-to" data-scroll-to="body"><img  class="slider-arrow arrow-top" src="<?=get_template_directory_uri()?>/assets/images/arrow-up.svg" alt=""><span class="screen-reader-text"><?php _e( 'Scroll down to content', 'twentyseventeen' ); ?></span></a>

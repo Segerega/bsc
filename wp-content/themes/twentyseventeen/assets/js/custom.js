@@ -27,7 +27,9 @@
 
         });
 
-
+        $(window).load(function () {
+            $('body').addClass('site-loaded');
+        });
     });
 
 })( jQuery );
