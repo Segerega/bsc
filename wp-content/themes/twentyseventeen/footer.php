@@ -26,6 +26,9 @@
 </div><!-- .site-content-contain -->
 </div><!-- #page -->
 <?php wp_footer(); ?>
+<div class="site-overlay">
+    <img src="/wp-content/themes/twentyseventeen/assets/images/loader.svg" alt="loading" class="loading">
+</div>
 </body>
 
 </html>
