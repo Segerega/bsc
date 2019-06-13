@@ -2175,7 +2175,9 @@ body.page-template-contact #page > .content-wrapper {
     background-repeat: no-repeat;
     min-height: 50vh;
 }
-
+.page-template-what-we-do section.section-with-background:not(.plan-section){
+    margin-top: 83px;
+}
 section.section-with-background {
     transition: all .25s ease-in-out;
 }
@@ -2191,9 +2193,13 @@ section.opened.section-with-background {
     margin-left: -10px;
 }
 
+.innovation-block h3{
+    font-size: 20px;
+}
+
 .innovation-block {
     background-color: #e1f1e3;
-    padding: 60px;
+    padding: 14px 60px 37px;
     position: relative;
     margin: 0 -3000px;
 }
@@ -2224,15 +2230,15 @@ section.opened.section-with-background {
     position: absolute;
     width: 35px;
     height: 35px;
-    top: 20px;
-    right: 20px;
+    top: 32px;
+    right: 44px;
     cursor: pointer;
 }
 
 .innovation span:before, .innovation span:after {
     content: '';
     display: inline-block;
-    top: 10px;
+    top: 14px;
     width: 518px;
     left: 127px;
     height: 1px;
@@ -2264,7 +2270,11 @@ section.opened.section-with-background {
 .page-template-what-we-do section h2 {
     text-transform: uppercase;
     font-size: 73px;
-    margin-bottom: -2px;
+    margin-bottom: -9px;
+}
+
+#first-section {
+    margin-top: 10px;
 }
 
 .plan-section h2 {
@@ -2273,8 +2283,7 @@ section.opened.section-with-background {
 
 .plan-section .description ul > li {
     color: #0a4382;
-    font-size: 24px;
-    line-height: 40px;
+
 }
 
 .plan-section .innovation.plan span:before,
@@ -2291,10 +2300,7 @@ section.opened.section-with-background {
 }
 
 .write-section .description ul > li {
-    font-weight: 600;
     color: #1e85ce;
-    font-size: 26px;
-    line-height: 36px;
 }
 
 .write-section .innovation.write span:before,
@@ -2312,9 +2318,6 @@ section.opened.section-with-background {
 
 .visualize-section .description ul > li {
     color: #39a439;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 36px;
 }
 
 .visualize-section .innovation.visualize span:before,
@@ -2325,16 +2328,15 @@ section.opened.section-with-background {
 .visualize-section .innovation.visualize span {
     color: #39a439;
 }
-
+.engage-section {
+    margin-bottom: 80px;
+}
 .engage-section h2 {
     color: #18727d;
 }
 
 .engage-section .description ul > li {
     color: #18727d;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 36px;
 }
 
 .engage-section .innovation.engage span:before,
@@ -2467,15 +2469,18 @@ section.opened.section-with-background {
 #page .description ul {
     display: block;
     float: none;
+    margin-top: 40px;
+
 }
 
 .description ul > li {
     color: #003473;
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
     padding-bottom: 0;
     margin-bottom: 0;
-    font-size: 18px;
+    font-size: 24px;
+    line-height: 1.6;
 }
 
 body #page, body footer {
@@ -2598,10 +2603,6 @@ section h3 {
     margin-top: 23px;
 }
 
-.text-center {
-    margin-top: 62px;
-}
-
 .title-description-who-we-are {
     /*padding-top: 59px !important;*/
 }
@@ -2611,8 +2612,11 @@ section h3 {
     line-height: 1.3;
 }
 
-.text-center {
-    margin-top: 83px;
+section.section-with-background .description p {
+    font-size: 24px;
+    line-height: 1.3;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 footer .main-navigation li {
@@ -2655,4 +2659,14 @@ footer .scroll-to {
 .visualize-section .centered img{
     height: 59px;
     max-height: 59px;
+}
+
+
+.engage-section .more-workshop {
+    width: 275px;
+}
+
+.engage-section .centered img {
+    height: 56px;
+    max-height: 56px;
 }
