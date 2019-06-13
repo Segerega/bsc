@@ -1729,13 +1729,15 @@ BRANDING
     text-align: center;
     max-width: 1000px;
     margin: 0 auto;
+    margin-top: 16px;
 }
 
 .animation-words.title {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 75px;
+    font-size: 84px;
+    letter-spacing: -0.4px;
     font-weight: bold;
     background-size: 150%;
     background-position: center center;
