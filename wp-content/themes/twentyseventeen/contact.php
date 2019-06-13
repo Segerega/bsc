@@ -3,9 +3,9 @@ get_header(); ?>
 
 <div class="content-wrapper section-with-background"
      style="background-image: url('/wp-content/themes/twentyseventeen/assets/images/BKG_Contact.jpg'); background-position: cover">
-<div class="descripton-contact-wrapper">
-    <h1 class="title-contact">For new business inquiries or if you'd like to join our team, drop us a line </h1>
-</div>
+    <div class="descripton-contact-wrapper">
+        <h1 class="title-contact">For new business inquiries or if you'd like to join our team, drop us a line </h1>
+    </div>
     <div class="content-wrapper contact-section">
         <div class="row">
             <div class="col-sm-12 col-md-4 table-contact position contact-flex-column">
@@ -15,10 +15,9 @@ get_header(); ?>
             </div>
             <div class="col position media-contact contact-flex-column contact-flex-row link-ny">
                 <div class="title-contact-map">new york</div>
-                <div class="description-contsct">250 Hudson Street<br>New York. NY 10013. USA<br>+212.704.1000</)div>
-                <div class="map-new-york-img">
-                    <img class="img-map" src="/wp-content/themes/twentyseventeen/assets/images/NYC_map_new.jpg" alt="">
-                    <div class="img-map"></div>
+                <div class="description-contsct">250 Hudson Street<br>New York. NY 10013. USA<br>+212.704.1000</div>
+                <div class="map-new-york-img img-map">
+                    <img src="/wp-content/themes/twentyseventeen/assets/images/NYC_map_new.jpg" alt="">
                     <a class="link" href="#"></a>
                 </div>
             </div>
@@ -28,7 +27,8 @@ get_header(); ?>
                 <div class="description-contsct">105 Victoria Street<br>London SWIE 6QT. UK<br>+7.302.80346801</div>
 
                 <div class="map-london-img">
-                    <img class="img-map" src="/wp-content/themes/twentyseventeen/assets/images/LondonMap_new.jpg" alt="">
+                    <img class="img-map" src="/wp-content/themes/twentyseventeen/assets/images/LondonMap_new.jpg"
+                         alt="">
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@ get_header(); ?>
 </div>
 <div class="map-wrapper">
     <div id="map-new-york" class="ny-click  map-container"></div>
-    <div id="map-london"  class="london-click map-container"></div>
+    <div id="map-london" class="london-click map-container"></div>
 </div>
 
 <script>
@@ -51,9 +51,10 @@ get_header(); ?>
         });
 
         jQuery('.map-wrapper').on('click', function (e) {
-            if(jQuery(e.target).is('.map-wrapper')){
+            if (jQuery(e.target).is('.map-wrapper')) {
                 jQuery('.map-wrapper').removeClass('open-map open-london open-ny');
-            };
+            }
+            ;
         });
 
     });
@@ -63,13 +64,13 @@ get_header(); ?>
         async defer></script>
 <script>
     var styles = [
-            {
-                "stylers": [
-                    {
-                        "visibility": "simplified"
-                    }
-                ]
-            },
+            // {
+            //     "stylers": [
+            //         {
+            //             "visibility": "simplified"
+            //         }
+            //     ]
+            // },
             {
                 "elementType": "geometry",
                 "stylers": [
@@ -102,6 +103,24 @@ get_header(); ?>
                     }
                 ]
             },
+            {
+                "featureType": "administrative.land_parcel",
+                "elementType": "labels",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+        {
+            "featureType": "poi",
+            "elementType": "labels.text",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
             {
                 "featureType": "administrative.land_parcel",
                 "elementType": "labels.text.fill",
@@ -139,15 +158,15 @@ get_header(); ?>
                     }
                 ]
             },
-            {
-                "featureType": "poi",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                    {
-                        "color": "#757575"
-                    }
-                ]
-            },
+            // {
+            //     "featureType": "poi",
+            //     "elementType": "labels.text.fill",
+            //     "stylers": [
+            //         {
+            //             "color": "#757575"
+            //         }
+            //     ]
+            // },
             {
                 "featureType": "poi.park",
                 "elementType": "geometry",
@@ -347,6 +366,7 @@ get_header(); ?>
 
     .a-contact {
         position: relative;
+        margin-left: 17px;
     }
 
     .a-contact .mail-contact {
@@ -363,6 +383,8 @@ get_header(); ?>
         border: 18px solid transparent;
         height: 36px;
         border-top-color: #64b978;
+        font-style: italic;
+        font-weight: 500;
     }
 
     .a-contact .mail-contact:after {

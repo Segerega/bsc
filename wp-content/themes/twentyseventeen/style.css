@@ -1215,7 +1215,7 @@ a .nav-title,
 }
 
 .navigation-top .menu-item > a {
-    padding-top: 12px;
+    padding-top: 36px;
     border-top: 10px solid transparent;
 }
 
@@ -1226,6 +1226,9 @@ a .nav-title,
 .main-navigation {
     clear: both;
     display: inline-block;
+}
+.menu-main-menu-container a{
+    font-size: 22px;
 }
 
 .main-navigation ul {
@@ -1273,7 +1276,7 @@ a .nav-title,
 .main-navigation li {
     position: relative;
     display: inline-block;
-    padding-right: 15px;
+    padding-right: 39px;
 }
 
 .main-navigation li li,
@@ -1573,7 +1576,7 @@ BRANDING
 }
 
 .content-wrapper {
-    max-width: 1100px;
+    max-width: 1152px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1628,6 +1631,7 @@ BRANDING
 
 .scroll-to img {
     width: 45px;
+    margin-bottom: 0;
 }
 
 .scroll-to {
@@ -1656,7 +1660,7 @@ BRANDING
 }
 
 .first-section {
-    padding: 60px 0;
+    padding: 71px 0;
     position: relative;
     text-align: center;
 }
@@ -1826,9 +1830,9 @@ section h2 {
 }
 
 .content-wrapper h2 + h3 {
-    margin-top: 0px;
+    margin-top: -7px;
     padding-top: 0;
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
@@ -1866,9 +1870,9 @@ section h2 {
     color: #02606d;
     font-weight: bold;
     text-align: center;
-    margin: 10px 90px;
-    font-size: 42px;
-    padding-bottom: 30px;
+    margin: 59px 48px 0;
+    font-size: 44px;
+    padding-bottom: 41px;
 }
 
 #map-new-york,
@@ -2009,8 +2013,8 @@ body.page-template-contact {
         padding: 20px 0;
     }
     .animation-words.title {
-        font-size: 31px;
-        margin-bottom: 0;
+        font-size: 87px;
+        margin-bottom: 105px;
     }
     .innovation span:before,
     .innovation span:after{
@@ -2083,10 +2087,13 @@ body.page-template-contact #page > .content-wrapper {
 
 .description-contsct {
     color: #7b7674;
+    line-height: 25px;
+    font-size: 19px;
 }
 
 .title-contact-map {
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 21px;
     text-transform: uppercase;
 }
 
@@ -2139,7 +2146,9 @@ body.page-template-contact #page > .content-wrapper {
 }
 
 .more-workshop {
-    width: 125px;
+    width: 172px;
+    margin-top: -10px;
+    margin-left: -11px;
 }
 
 .pub {
@@ -2163,9 +2172,10 @@ section.opened.section-with-background {
 }
 
 .open-innovation-block {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    /* margin-bottom: 0px; */
     cursor: pointer;
+    margin-left: -10px;
 }
 
 .innovation-block {
@@ -2206,21 +2216,21 @@ section.opened.section-with-background {
     cursor: pointer;
 }
 
-.innovation span:before,
-.innovation span:after {
+.innovation span:before, .innovation span:after {
     content: '';
     display: inline-block;
     top: 10px;
-    width: 2000px;
-    left: 100px;
+    width: 518px;
+    left: 127px;
     height: 1px;
     vertical-align: middle;
     background: #0A246A;
     position: absolute;
+    font-size: 20px;
 }
 
 .innovation span:after {
-    right: 100px;
+    right: 127px;
     left: auto;
 }
 
@@ -2235,11 +2245,13 @@ section.opened.section-with-background {
     padding-left: 0;
     margin-block-start: 0;
     margin-block-end: 0;
+    font-size: 20px;
 }
 
 .page-template-what-we-do section h2 {
     text-transform: uppercase;
-    font-size: 68px;
+    font-size: 73px;
+    margin-bottom: -2px;
 }
 
 .plan-section h2 {
@@ -2248,6 +2260,8 @@ section.opened.section-with-background {
 
 .plan-section .description ul > li {
     color: #0a4382;
+    font-size: 24px;
+    line-height: 40px;
 }
 
 .plan-section .innovation.plan span:before,
@@ -2264,7 +2278,10 @@ section.opened.section-with-background {
 }
 
 .write-section .description ul > li {
+    font-weight: 600;
     color: #1e85ce;
+    font-size: 26px;
+    line-height: 36px;
 }
 
 .write-section .innovation.write span:before,
@@ -2282,6 +2299,9 @@ section.opened.section-with-background {
 
 .visualize-section .description ul > li {
     color: #39a439;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
 }
 
 .visualize-section .innovation.visualize span:before,
@@ -2299,6 +2319,9 @@ section.opened.section-with-background {
 
 .engage-section .description ul > li {
     color: #18727d;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
 }
 
 .engage-section .innovation.engage span:before,
@@ -2417,7 +2440,7 @@ section.opened.section-with-background {
 }
 
 .img-map {
-    border: 2px solid #999999;
+    border: 1px solid #999999;
 }
 
 .person-slider {
@@ -2492,7 +2515,7 @@ footer {
     padding: 0;
 }
 .animation-words.title{
-    line-height: 1;
+    line-height: 1.1;
 
 }
 section h2{
@@ -2503,16 +2526,62 @@ section h2{
 .description{
     line-height: 1.5;
     font-size: 22px;
+    margin-bottom: 27px;
 }
 .btn.btn-success{
     font-weight: 600;
-    padding: 13px 40px;
-    font-size: 22px;
+    padding: 14px 44px;
+    font-size: 23px;
     border-radius: 0;
 }
 .title-description-who-we-are{
-    font-size: 51px;
+    font-size: 54px;
 }
 .animation-words.title{
     margin-bottom: 5px;
+}
+.mail-contact{
+    font-style: italic;
+    font-weight: 500;
+}
+section h3{
+    color: #004F59
+}
+.more-workshop{
+    /*width: 186px;*/
+}
+.logo-img {
+    width: 234px;
+    margin-top: 23px;
+}
+.text-center{
+    margin-top: 62px;
+}
+.title-description-who-we-are{
+    /*padding-top: 59px !important;*/
+}
+.description{
+    line-height: 1.5;
+    font-size: 26px;
+    margin-bottom: 27px;
+}
+.description p{
+    font-size: 26px;
+    line-height: 1.3;
+}
+.text-center {
+    margin-top: 83px;
+}
+footer .main-navigation li{
+    margin-right: -24px;
+}
+footer #top-menu > li > a {
+    font-size: 18px;
+}
+.visualize-section .more-workshop img{
+    width: 173px;
+    margin-left: 12px;
+}
+.write-section .centered.text-center img{
+    width: 186px;
 }
