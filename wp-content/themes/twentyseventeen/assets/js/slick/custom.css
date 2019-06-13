@@ -24,11 +24,11 @@
     position: absolute;
     height: 64px;
     top: 50%;
-    margin-top: -13px;
+    margin-top: -47px;
 }
 
 .slider-arrow.arrow-left {
-    left: -56px;
+    left: -50px;
 }
 
 .slider-arrow.arrow-right {
