@@ -2632,7 +2632,7 @@ footer .scroll-to {
     margin-left: 12px;
 }
 
-.write-section .centered.text-center img {
+.write-section .centered img {
     width: 215px;
 }
 
@@ -2643,4 +2643,16 @@ footer .scroll-to {
     font-weight: 700;
     letter-spacing: 0.9px;
     margin-top: 18px;
+}
+.plan-section .centered img{
+    height: 70px;
+    max-height: 70px;
+
+}
+.write-section .more-workshop{
+    width: 226px;
+}
+.visualize-section .centered img{
+    height: 59px;
+    max-height: 59px;
 }
