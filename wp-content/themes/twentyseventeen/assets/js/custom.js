@@ -9,9 +9,9 @@
             }, 500);
         });
 
+        menuFixed();
         $(window).scroll(function () {
-            var t = $(window).scrollTop();
-            t >= 100 ? $("#masthead").addClass("fixed") : $("#masthead").removeClass("fixed")
+            menuFixed();
         })
 
         $(".open-innovation-wrapper").click(function () {
@@ -31,5 +31,10 @@
             $('body').addClass('site-loaded');
         });
     });
+
+    function menuFixed(){
+        var t = $(window).scrollTop();
+        t >= 100 ? $("#masthead").addClass("fixed") : $("#masthead").removeClass("fixed")
+    }
 
 })( jQuery );
