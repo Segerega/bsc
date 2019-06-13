@@ -20,18 +20,18 @@ get_header(); ?>
     <section id="first-section" class="first-section section-with-background" style="background-image: url('/wp-content/themes/twentyseventeen/assets/images/what we do-first section.jpg'); background-position: cover">
         <div class="content-wrapper">
             <h2 class="title-description-who-we-are"> We Are Science Storytellers </h2>
-            <div class="description">We plan, write, visualize, and engage around your core science narrative-across
+            <div class="description">We plan, write, visualize, and engage around your core science narrative-across<br>
                 platforms from academic journals and ad boards to exhibit booths and digital media
             </div>
             <br>
-            <a href="#" class="btn btn-success">discover</a>
+            <a href="/what-we-do/" class="btn btn-success">Discover</a>
         </div>
     </section>
     <section id="slider-section" class="slider-section text-center">
         <div class="content-wrapper">
             <h2 class="title-description-who-we-are"> Standout Leadership</h2>
             <div class="description">
-                Every BioScience account team is a custom blendof content, industry, and executional expertise—amplyseasoned by our leadership below
+                Every BioScience account team is a custom blendof content, industry,<br> and executional expertise—amplyseasoned by our leadership below
             </div>
         </div>
     </section>
