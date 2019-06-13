@@ -2628,11 +2628,17 @@ footer .scroll-to {
     bottom: 95px;
 }
 
-.visualize-section .more-workshop img {
+.visualize-section .more-workshop img{
     width: 173px;
     margin-left: 12px;
 }
 
 .write-section .centered.text-center img {
     width: 186px;
+}
+.page-template-what-we-do .animation-words.title {
+    margin-bottom: 19px;
+    margin-left: 14px;
+    font-size: 85px;
+    font-weight: 700;
 }
