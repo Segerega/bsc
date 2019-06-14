@@ -1277,7 +1277,7 @@ a .nav-title,
 .main-navigation li {
     position: relative;
     display: inline-block;
-    padding-right: 39px;
+    padding-right: 20px;
 }
 
 .main-navigation li li,
@@ -1909,163 +1909,6 @@ body.page-template-contact {
     display: none;
 }
 
-@media only screen and (max-width: 992px) {
-    .wrapper {
-        width: 750px;
-    }
-
-    .description {
-        padding: 0;
-        margin-bottom: 15px;
-    }
-
-    .second-section .overlay2.more-shadow2 {
-        box-shadow: inset 0 0 297px 160px #fff;
-    }
-
-    .third-section p {
-
-    }
-
-    .first-description {
-        margin-bottom: 5px;
-        margin: 0 10px;
-    }
-
-    .content-wrapper p {
-        margin: 0 10px;
-    }
-
-    .col-sm-12.col-md-4.table-contact.position.contact-flex-column {
-        text-align: center;
-        margin-bottom: 16px;
-        margin-top: 16px;
-    }
-
-    .map-col {
-        display: flex;
-    }
-
-    #map-new-york,
-    #map-london {
-        width: 100%;
-        height: 60vh;
-        border: 3px solid #aeadac;
-    }
-
-    #map-new-york {
-        position: relative;
-        overflow: hidden;
-        float: left;
-        width: 100%;
-    }
-
-    #map-london {
-        position: relative;
-        overflow: hidden;
-        float: right;
-        width: 100%;
-        height: 50%;
-    }
-
-    .map-col.col-sm {
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-
-    .wrap-site {
-        margin: 0 5% 5%;
-    }
-
-    .wrap-site .row {
-        margin-top: 15px;
-    }
-
-    .title-contact {
-        margin: 15px 5%;
-        font-size: 21px;
-    }
-
-    .img-map:last-child {
-        margin-top: 25px;
-    }
-
-    .title-description-who-we-are {
-        margin-bottom: 0;
-    }
-
-    .description {
-        font-size: 14px;
-        margin: 0 5px;
-    }
-
-    .video-wrapper {
-        height: 255px;
-    }
-
-    .second-section {
-        padding: 0;
-    }
-
-    .second-section {
-        padding: 0;
-    }
-
-    #first-section {
-        padding: 20px 0;
-    }
-
-    .animation-words.title {
-        font-size: 87px;
-        margin-bottom: 105px;
-    }
-
-    .innovation span:before,
-    .innovation span:after {
-        width: 100px !important;
-    }
-
-    .title-description-what-we-do {
-        margin-bottom: 0;
-    }
-
-    .description p {
-        font-size: 14px;
-    }
-
-    .scroll-to {
-        position: relative;
-        left: 0;
-        bottom: 0;
-        top: 26px;
-    }
-
-    section h2 {
-        font-size: 31px;
-    }
-
-    .first-section h2 {
-        font-size: 31px;
-    }
-
-    .title-wrapper .title-description {
-        font-size: 14px;
-    }
-
-    .media-contact {
-        margin-right: 10px;
-    }
-
-    .media-contact:nth-child(2) {
-        margin-right: 0;
-        margin-left: 10px;
-    }
-
-    #map-london {
-        float: left;
-    }
-
-}
 
 .description-plan {
     margin-top: 10px;
@@ -2111,17 +1954,6 @@ body.page-template-contact #page > .content-wrapper {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 1023px) {
-    #mobmenuleft {
-        flex-direction: column;
-        margin: 0 73px;
-    }
-
-    ul > #mobmenuleft, ul > #mobmenuright {
-        padding: 0;
-        margin: 0 73px;
-    }
-}
 
 .example-file {
     background-image: url("/resource/Images and video/what_we_do-first_section.jpg");
@@ -2276,7 +2108,9 @@ section.opened.section-with-background {
 #first-section {
     margin-top: 10px;
 }
-
+.plan-section .innovation-block{
+    background-color: #d9e3ec;
+}
 .plan-section h2 {
     color: #0a4382;
 }
@@ -2293,6 +2127,10 @@ section.opened.section-with-background {
 
 .plan-section + .innovation.plan span {
     color: #0a4382;
+}
+
+.write-section .innovation-block {
+    background-color: #d9edf6;
 }
 
 .write-section h2 {
@@ -2312,6 +2150,9 @@ section.opened.section-with-background {
     color: #1e85ce;
 }
 
+.visualize-section .innovation-block {
+    background-color: #dff1e3;
+}
 .visualize-section h2 {
     color: #39a439;
 }
@@ -2331,6 +2172,10 @@ section.opened.section-with-background {
 .engage-section {
     margin-bottom: 80px;
 }
+.engage-section .innovation-block {
+    background-color: #cbe3e5;
+}
+
 .engage-section h2 {
     color: #18727d;
 }
@@ -2520,12 +2365,17 @@ footer {
     position: relative;
 }
 
-.arrow-up-img {
-    transform: rotate(180deg);
+footer #top-menu LI.menu-item-19 a,
+footer #top-menu LI.menu-item-18 a{
+    border-left:3px solid #333;
+}
+footer #top-menu a{
+    padding: 0 10px;
+    line-height: 1;
 }
 
-footer {
-    margin-bottom: 15px;
+.arrow-up-img {
+    transform: rotate(180deg);
 }
 
 .copyright {
@@ -2669,4 +2519,212 @@ footer .scroll-to {
 .engage-section .centered img {
     height: 56px;
     max-height: 56px;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .description {
+        margin-bottom: 0px;
+    }
+
+    #page .description ul {
+        margin-top: 20px;
+    }
+
+    .logo-img {
+        width: 254px;
+        margin-top: 9px;
+    }
+    .menu-main-menu-container a{
+        font-size: 20px;
+    }
+    .navigation-top .menu-item > a {
+        padding-top: 28px;
+        border-top: 8px solid transparent;
+    }
+    .menu-item-type-custom a{
+        font-size: 24px;
+    }
+    .menu-item-type-custom {
+        padding-top: 10px;
+    }
+
+    .page-template-what-we-do .animation-words.title {
+        letter-spacing: -0.9px;
+        margin-top: 38px;
+    }
+    .scroll-to {
+        bottom: 108px;
+
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    #mobmenuleft {
+        flex-direction: column;
+        margin: 0 73px;
+    }
+
+    ul > #mobmenuleft, ul > #mobmenuright {
+        padding: 0;
+        margin: 0 73px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .wrapper {
+        width: 750px;
+    }
+
+    .description {
+        padding: 0;
+        margin-bottom: 15px;
+    }
+
+    .second-section .overlay2.more-shadow2 {
+        box-shadow: inset 0 0 297px 160px #fff;
+    }
+
+    .third-section p {
+
+    }
+
+    .first-description {
+        margin-bottom: 5px;
+        margin: 0 10px;
+    }
+
+    .content-wrapper p {
+        margin: 0 10px;
+    }
+
+    .col-sm-12.col-md-4.table-contact.position.contact-flex-column {
+        text-align: center;
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
+
+    .map-col {
+        display: flex;
+    }
+
+    #map-new-york,
+    #map-london {
+        width: 100%;
+        height: 60vh;
+        border: 3px solid #aeadac;
+    }
+
+    #map-new-york {
+        position: relative;
+        overflow: hidden;
+        float: left;
+        width: 100%;
+    }
+
+    #map-london {
+        position: relative;
+        overflow: hidden;
+        float: right;
+        width: 100%;
+        height: 50%;
+    }
+
+    .map-col.col-sm {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .wrap-site {
+        margin: 0 5% 5%;
+    }
+
+    .wrap-site .row {
+        margin-top: 15px;
+    }
+
+    .title-contact {
+        margin: 15px 5%;
+        font-size: 21px;
+    }
+
+    .img-map:last-child {
+        margin-top: 25px;
+    }
+
+    .title-description-who-we-are {
+        margin-bottom: 0;
+    }
+
+    .description {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+
+    .video-wrapper {
+        height: 255px;
+    }
+
+    .second-section {
+        padding: 0;
+    }
+
+    .second-section {
+        padding: 0;
+    }
+
+    #first-section {
+        padding: 20px 0;
+    }
+
+    .animation-words.title {
+        font-size: 87px;
+        margin-bottom: 105px;
+    }
+
+    .innovation span:before,
+    .innovation span:after {
+        width: 100px !important;
+    }
+
+    .title-description-what-we-do {
+        margin-bottom: 0;
+    }
+
+    .description p {
+        font-size: 14px;
+    }
+
+    .scroll-to {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        top: 26px;
+    }
+
+    section h2 {
+        font-size: 31px;
+    }
+
+    .first-section h2 {
+        font-size: 31px;
+    }
+
+    .title-wrapper .title-description {
+        font-size: 14px;
+    }
+
+    .media-contact {
+        margin-right: 10px;
+    }
+
+    .media-contact:nth-child(2) {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    #map-london {
+        float: left;
+    }
+
 }

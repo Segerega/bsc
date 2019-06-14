@@ -1,11 +1,12 @@
 <?
 
 $args = array(
-    'numberposts' => 10,
+    'numberposts' => 20,
     'post_type' => 'person',
+    'hide' => false,
     'meta_key' => 'order',
-    'orderby' => 'meta_value',
-    'order' => 'ASC'
+    'orderby' => 'meta_value_num',
+    'order' => 'desc',
 );
 
 $persons = get_posts($args);
@@ -14,16 +15,31 @@ $persons = get_posts($args);
     <section class="person-slider slider">
         <? foreach ($persons as $person): ?>
             <div class="slider-item person-order-id-<?= $person->ID ?>"
-                 data-person-id="<?= $person->ID ?>">
+                 data-person-id="<?= $person->ID ?>"
+                 data-order-id="<?= get_field('order', $person->ID) ?>">
                 <div class="slider-item-wrapper ">
                     <div class="slider-item-content clearfix">
                         <div class="person-image"
+
+                             <?
+                             $image_id = get_post_thumbnail_id($person->ID);
+                             $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
+                             $image_title = get_the_title($image_id);
+                             ?>
+
+                             alt="<?=$image_alt?>"
+                             title="<?=$image_title?>"
                              style="background-image: url('<?php echo get_the_post_thumbnail_url($person->ID) ?>')">
                             <div class="person-image-second"
-                                 style="background-image: url('<?php echo get_field('person_second_image', $person->ID)['url'] ?>')">
+                                 style="background-image: url('<?php echo get_field('person_second_image', $person->ID)['url'] ?>')"
+                                 alt="<?=get_field('person_second_image', $person->ID)['alt']?>"
+                                 title="<?=get_field('person_second_image', $person->ID)['title']?>"
+                            >
                             </div>
                             <div class="person-image-second-overlay"></div>
                             <div class="person-image-third"
+                                 alt="<?=get_field('person_third_image', $person->ID)['alt']?>"
+                                 title="<?=get_field('person_third_image', $person->ID)['title']?>"
                                  style="background-image: url('<?php echo get_field('person_third_image', $person->ID)['url'] ?>')">
                             </div>
                         </div>
@@ -75,6 +91,31 @@ $persons = get_posts($args);
                 "     alt=\"\">",
                 prevArrow: "<img class=\"slider-arrow arrow-left\" src=\"<?= get_template_directory_uri() ?>/assets/images/arrow-left.svg\"\n" +
                 "     alt=\"\">",
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+
+
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             })
 
             $('.slick-slide').click(function (e) {

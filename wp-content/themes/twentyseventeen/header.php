@@ -12,6 +12,9 @@
  * @version 1.0
  */
 
+session_start();
+$_SESSION['video_id'] = $_SESSION['video_id'] === 2 || $_SESSION['video_id'] === null ? 1:2;
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
