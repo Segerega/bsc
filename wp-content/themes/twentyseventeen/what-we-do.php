@@ -37,7 +37,6 @@ $weDos = get_posts($args); ?>
                         </div>
                     </div>
                 </div>
-
             </section>
         <?endforeach; ?>
     </div>

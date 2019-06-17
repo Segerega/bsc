@@ -2081,6 +2081,7 @@ section.opened.section-with-background {
 
 .innovation-block h3{
     font-size: 20px;
+    font-family: poppins;
 }
 
 .innovation-block {
@@ -2153,6 +2154,7 @@ section.opened.section-with-background {
     -webkit-margin-after: 0;
     margin-block-end: 0;
     font-size: 20px;
+    font-family: Poppins;
 }
 
 .page-template-what-we-do section h2 {

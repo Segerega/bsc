@@ -103,14 +103,3 @@ if ((is_single() || (is_page() && !twentyseventeen_is_frontpage())) && has_post_
     echo '</div><!-- .single-featured-image-header -->';
 endif;
 ?>
-    <script>
-        function externalLinks() {
-            links = document.getElementsByTagName("a");
-            for (i=0; i<links.length; i++) {
-                link = links[i];
-                if (link.getAttribute("href") && link.getAttribute("rel") == "external")
-                    link.target = "_blank";
-            }
-        }
-        window.onload = externalLinks;
-    </script>
