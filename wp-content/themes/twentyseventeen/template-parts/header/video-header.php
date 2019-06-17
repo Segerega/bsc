@@ -17,9 +17,9 @@
     <div class="video-overlay"></div>
 
         <video class="video VideoPane-video"
-               poster="<?=get_field('video_'. ($_SESSION['video_id'] ) . "_image", $post->ID)?>"
+               poster="<?=get_field('video_'. (((int)$_SESSION['video_id'] ) % 2 + 1).  "_image", $post->ID)?>"
                loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline"
-               src="<?=get_field('video_'. ($_SESSION['video_id'] ), $post->ID)?>"
+               src="<?=get_field('video_'. (((int)$_SESSION['video_id'] ) % 2 + 1), $post->ID)?>"
         >
         </video>
 </div>

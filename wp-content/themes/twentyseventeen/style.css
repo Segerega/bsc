@@ -53,7 +53,6 @@ figure {
 
 hr {
     -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
     box-sizing: content-box;
     height: 0;
     overflow: visible;
@@ -196,7 +195,6 @@ fieldset {
 
 legend {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     color: inherit;
     display: table;
@@ -217,7 +215,6 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
 }
@@ -280,7 +277,6 @@ template {
 
 .screen-reader-text:focus {
     background-color: #f1f1f1;
-    -webkit-border-radius: 3px;
     border-radius: 3px;
     -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
@@ -914,7 +910,6 @@ textarea {
     background: #fff;
     background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
     border: 1px solid #bbb;
-    -webkit-border-radius: 3px;
     border-radius: 3px;
     display: block;
     padding: 0.7em;
@@ -943,7 +938,6 @@ textarea:focus {
 
 select {
     border: 1px solid #bbb;
-    -webkit-border-radius: 3px;
     border-radius: 3px;
     height: 3em;
     max-width: 100%;
@@ -969,7 +963,6 @@ input[type="button"],
 input[type="submit"] {
     background-color: #222;
     border: 0;
-    -webkit-border-radius: 2px;
     border-radius: 2px;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -983,6 +976,7 @@ input[type="submit"] {
     padding: 1em 2em;
     text-shadow: none;
     -webkit-transition: background 0.2s;
+    -o-transition: background 0.2s;
     transition: background 0.2s;
 }
 
@@ -1059,6 +1053,8 @@ hr {
 
 #page ul, footer ul {
     list-style: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     float: right;
 }
@@ -1155,6 +1151,7 @@ a .nav-title,
     text-decoration: none;
     -webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
     transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+    -o-transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
     transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
     transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
     margin-right: 22px;
@@ -1184,6 +1181,7 @@ a .nav-title,
 .post-thumbnail a img {
     -webkit-backface-visibility: hidden;
     -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
     transition: opacity 0.2s;
 }
 
@@ -1211,6 +1209,7 @@ a .nav-title,
     color: #222;
     font-weight: 600;
     -webkit-transition: color 0.2s;
+    -o-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -1388,11 +1387,14 @@ a .nav-title,
 }
 
 .site-header {
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
 .site-header.fixed {
     background-color: #fffffff7;
+    -webkit-box-shadow: 0px 4px 13px 0px #c3c3c369;
     box-shadow: 0px 4px 13px 0px #c3c3c369;
 
 }
@@ -1403,7 +1405,6 @@ a .nav-title,
 
 html {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -1412,7 +1413,6 @@ html {
 *:after {
     /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
     -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
     box-sizing: inherit;
 }
 
@@ -1641,6 +1641,8 @@ BRANDING
     cursor: pointer;
     z-index: 1;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
@@ -1650,6 +1652,8 @@ BRANDING
     position: static;
     margin-top: 35px;
     display: inline-block;
+    -webkit-transform: none;
+    -ms-transform: none;
     transform: none;
 }
 
@@ -1660,6 +1664,7 @@ BRANDING
 }
 
 .first-section .overlay.more-shadow {
+    -webkit-box-shadow: inset 0 0 286px 60px #fff;
     box-shadow: inset 0 0 286px 60px #fff;
 }
 
@@ -1670,12 +1675,14 @@ BRANDING
     left: -2px;
     right: -2px;
     bottom: -2px;
+    -webkit-box-shadow: inset 0 0 20px 20px #fff;
     box-shadow: inset 0 0 20px 20px #fff;
     z-index: -1;
 }
 
 .first-section .overlay.overlay-background {
     background-size: cover;
+    -webkit-box-shadow: inset 0 0 124px 70px #fff;
     box-shadow: inset 0 0 124px 70px #fff;
     top: 0;
     left: 0;
@@ -1694,7 +1701,10 @@ BRANDING
     width: 100%;
     position: relative;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-line-pack: center;
     align-content: center;
 }
 
@@ -1714,6 +1724,8 @@ BRANDING
     position: absolute;
     z-index: -2;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
@@ -1744,6 +1756,7 @@ BRANDING
     -webkit-animation: gradient 13s ease-in-out;
     animation: gradient 13s ease-in-out;
     animation-direction: reverse;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     text-transform: uppercase;
 }
@@ -1751,6 +1764,22 @@ BRANDING
 .fas {
     color: #4d4948;
     font-size: 60px;
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: left 50% top 50%;
+    }
+    30% {
+        background-position: left 0 top 100%;
+    }
+
+    70% {
+        background-position: left 100% top 0;
+    }
+    100% {
+        background-position: left 50% top 50%;
+    }
 }
 
 @keyframes gradient {
@@ -1780,6 +1809,7 @@ BRANDING
 }
 
 .second-section .overlay2.more-shadow2 {
+    -webkit-box-shadow: inset 0 0 286px 260px #fff;
     box-shadow: inset 0 0 286px 260px #fff;
 }
 
@@ -1790,12 +1820,14 @@ BRANDING
     left: -2px;
     right: -2px;
     bottom: -2px;
+    -webkit-box-shadow: inset 0 0 20px 20px #fff;
     box-shadow: inset 0 0 20px 20px #fff;
     z-index: -1;
 }
 
 .second-section .overlay2.overlay-background2 {
     background-size: cover;
+    -webkit-box-shadow: inset 0 0 124px 70px #fff;
     box-shadow: inset 0 0 124px 70px #fff;
     top: 0;
     left: 0;
@@ -1854,6 +1886,8 @@ section h2 {
 
 .row.section-footer {
     bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 4%;
 }
@@ -1931,6 +1965,8 @@ body.page-template-contact #page > .content-wrapper {
 
 .col.table-contact {
     padding-top: 17px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
 }
 
@@ -1949,6 +1985,8 @@ body.page-template-contact #page > .content-wrapper {
 }
 
 .col.media-contact {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
     flex: 2;
 }
 
@@ -2016,6 +2054,8 @@ body.page-template-contact #page > .content-wrapper {
     margin-top: 50px;
 }
 section.section-with-background {
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
 }
 
@@ -2027,6 +2067,8 @@ section.opened.section-with-background {
     overflow: hidden;
 }
 .mob-icon-menu.mob-menu-icon:before{
+    -webkit-transform: scale(10,1);
+    -ms-transform: scale(10,1);
     transform: scale(10,1);
 }
 
@@ -2106,7 +2148,9 @@ section.opened.section-with-background {
     color: #0A246A;
     text-transform: uppercase;
     padding-left: 0;
+    -webkit-margin-before: 0;
     margin-block-start: 0;
+    -webkit-margin-after: 0;
     margin-block-end: 0;
     font-size: 20px;
 }
@@ -2240,12 +2284,16 @@ section.opened.section-with-background {
     vertical-align: middle;
     background: #999999;
     position: absolute;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
     transform: translateX(-100%);
 }
 
 .last-updated span:after {
     right: -14px;
     left: auto;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
     transform: translateX(100%);
 }
 
@@ -2288,6 +2336,8 @@ section.opened.section-with-background {
 #map-new-york {
     top: 200%;
     position: absolute !important;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
     height: 70vh;
 }
@@ -2316,6 +2366,8 @@ section.opened.section-with-background {
 }
 
 .person-slider {
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
 }
 
@@ -2342,6 +2394,8 @@ section.opened.section-with-background {
 
 body #page, body footer {
     opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
 
@@ -2358,7 +2412,11 @@ body.site-loaded #page, body.site-loaded footer {
     position: absolute;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    -webkit-transition: opacity .5s ease-in-out, z-index 0s ease-in-out 0.5s;
+    -o-transition: opacity .5s ease-in-out, z-index 0s ease-in-out 0.5s;
     transition: opacity .5s ease-in-out, z-index 0s ease-in-out 0.5s;
 }
 
@@ -2387,6 +2445,8 @@ footer #top-menu a{
 }
 
 .arrow-up-img {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
@@ -2416,10 +2476,6 @@ section h2 {
     line-height: 1.5;
     padding: 0px;
     margin-bottom: 25px;
-}
-
-#slider-section {
-    margin-top: 30px;
 }
 
 .second-section {
@@ -2564,6 +2620,8 @@ footer .scroll-to {
     float: left;
 }
 .widget-column.footer-widget-2{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .widget_text.widget.widget_custom_html{
@@ -2571,9 +2629,13 @@ footer .scroll-to {
 }
 
 .video-wrapper .arrow-down-img{
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
 }
 .arrow-down-img{
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 .plan-section h3{
@@ -2633,14 +2695,24 @@ footer .scroll-to {
     position: relative;
     top: 67px;
 }
+
 .london-map-new{
     margin-top: -93px;
 }
 
+/*.home.page #first-section{*/
+    /*padding-bottom: 200px;*/
+/*}*/
+/*#slider-section{*/
+    /*margin-top: -120px;*/
+    /*position: relative;*/
+    /*z-index: 100;*/
+/*}*/
+
 @media (min-width: 500px) {
-.mobile-menu-wrapper{
-    display: none;
-}
+    .mobile-menu-wrapper{
+        display: none;
+    }
 }
 @media only screen and (min-width: 1300px) {
     .animation-words.title{
@@ -2675,6 +2747,9 @@ footer .scroll-to {
     }
     .title-contact{
         font-size: 42px;
+    }
+    .copyright {
+        font-size: 14px;
     }
 }
 @media only screen and (max-width: 425px){
@@ -2805,9 +2880,9 @@ footer .scroll-to {
         margin-bottom: 0px;
     }
     /*.innovation-block .description{*/
-        /*font-weight: 300;*/
-        /*margin-bottom: 40px;*/
-        /*font-size: 19px;*/
+    /*font-weight: 300;*/
+    /*margin-bottom: 40px;*/
+    /*font-size: 19px;*/
     /*}*/
 
     #page .description ul {
@@ -2845,6 +2920,9 @@ footer .scroll-to {
 
 @media only screen and (max-width: 1023px) {
     #mobmenuleft {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         margin: 0 73px;
     }
@@ -2866,6 +2944,7 @@ footer .scroll-to {
     }
 
     .second-section .overlay2.more-shadow2 {
+        -webkit-box-shadow: inset 0 0 297px 160px #fff;
         box-shadow: inset 0 0 297px 160px #fff;
     }
 
@@ -2889,6 +2968,8 @@ footer .scroll-to {
     }
 
     .map-col {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -2968,7 +3049,7 @@ footer .scroll-to {
 
     /*.innovation span:before,*/
     /*.innovation span:after {*/
-        /*width: 100px !important;*/
+    /*width: 100px !important;*/
     /*}*/
 
     .title-description-what-we-do {
@@ -3012,4 +3093,3 @@ footer .scroll-to {
     }
 
 }
-

@@ -5,13 +5,18 @@
             var $this = $(this),
                 $scrollToElement = $($this.data('scroll-to'));
             $('body, html').animate({
-                scrollTop: $scrollToElement.offset().top - 50
+                scrollTop: $scrollToElement.offset().top - $('#masthead').height()
             }, 500);
         });
 
         menuFixed();
         $(window).scroll(function () {
             menuFixed();
+        })
+
+        updateVideoSize();
+        $(window).resize(function () {
+            updateVideoSize();
         })
 
         $(".open-innovation-wrapper").click(function () {
@@ -31,6 +36,19 @@
             $('body').addClass('site-loaded');
         });
     });
+
+    function updateVideoSize(){
+        var $width = $(window).width(),
+            $height = $(window).height();
+        if($width/$height > 1.779){
+
+            $("video.VideoPane-video").width($(window).width()*1.05)
+
+        }else{
+
+            $("video.VideoPane-video").width($(window).height()*1.779)
+        }
+    }
 
     function menuFixed(){
         var t = $(window).scrollTop();

@@ -13,7 +13,10 @@
  */
 
 session_start();
-$_SESSION['video_id'] = $_SESSION['video_id'] === 2 || $_SESSION['video_id'] === null ? 1 : 2;
+//var_dump($_SESSION['video_id']);
+
+$_SESSION['video_id'] = (int)$_SESSION['video_id'] + 1;
+//var_dump($_SESSION['video_id']);
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
