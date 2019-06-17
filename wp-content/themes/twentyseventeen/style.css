@@ -1215,7 +1215,7 @@ a .nav-title,
 }
 
 .navigation-top .menu-item > a {
-    padding-top: 36px;
+    padding-top: 24px;
     border-top: 10px solid transparent;
 }
 
@@ -1229,7 +1229,7 @@ a .nav-title,
 }
 
 .menu-main-menu-container a {
-    font-size: 22px;
+    font-size: 17px;
 }
 
 .main-navigation ul {
@@ -1286,7 +1286,7 @@ a .nav-title,
 
 .main-navigation a {
     display: block;
-    padding: 0.5em 0;
+    padding: 0.5em 10px;
     text-decoration: none;
 }
 
@@ -1631,8 +1631,8 @@ BRANDING
 }
 
 .scroll-to img {
-    width: 50px;
-    margin-bottom: 0;
+    width: 82px;
+    margin-bottom: -76px;
 }
 
 .scroll-to {
@@ -1654,7 +1654,7 @@ BRANDING
 }
 
 .first-section {
-    padding: 71px 0;
+    padding: 71px 0 41px;
     position: relative;
     text-align: center;
 }
@@ -1719,7 +1719,7 @@ BRANDING
 
 .title-wrapper .title-description {
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 500;
     line-height: 1.3;
 }
@@ -1736,7 +1736,7 @@ BRANDING
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 84px;
+    font-size: 80px;
     letter-spacing: -0.4px;
     font-weight: bold;
     background-size: 150%;
@@ -1828,7 +1828,7 @@ section h2 {
 .content-wrapper h2 + h3 {
     margin-top: -7px;
     padding-top: 0;
-    font-size: 36px;
+    font-size: 29px;
     margin-bottom: 20px;
 }
 
@@ -1866,8 +1866,8 @@ section h2 {
     color: #02606d;
     font-weight: bold;
     text-align: center;
-    margin: 59px 48px 0;
-    font-size: 44px;
+    margin: 47px 48px 0;
+    font-size: 35px;
     padding-bottom: 41px;
 }
 
@@ -1934,13 +1934,15 @@ body.page-template-contact #page > .content-wrapper {
     flex: 1;
 }
 
-.description-contsct {
+.description-contact {
     color: #7b7674;
     line-height: 25px;
-    font-size: 19px;
+    font-size: 16px;
+    /*color: #64b978;*/
 }
 
 .title-contact-map {
+    color: #7b7674;
     font-weight: 600;
     font-size: 21px;
     text-transform: uppercase;
@@ -2007,8 +2009,11 @@ body.page-template-contact #page > .content-wrapper {
     background-repeat: no-repeat;
     min-height: 50vh;
 }
+.email-img{
+    margin-bottom: 20px;
+}
 .page-template-what-we-do section.section-with-background:not(.plan-section){
-    margin-top: 83px;
+    margin-top: 50px;
 }
 section.section-with-background {
     transition: all .25s ease-in-out;
@@ -2016,6 +2021,13 @@ section.section-with-background {
 
 section.opened.section-with-background {
     padding-bottom: 0px;
+}
+.mob-icon-menu.mob-menu-icon{
+    width: 30px;
+    overflow: hidden;
+}
+.mob-icon-menu.mob-menu-icon:before{
+    transform: scale(10,1);
 }
 
 .open-innovation-block {
@@ -2031,7 +2043,7 @@ section.opened.section-with-background {
 
 .innovation-block {
     background-color: #e1f1e3;
-    padding: 14px 60px 37px;
+    padding: 14px 60px 0px;
     position: relative;
     margin: 0 -3000px;
 }
@@ -2043,8 +2055,8 @@ section.opened.section-with-background {
 
 .email-link {
     color: #404040;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 600;
     text-decoration: underline;
 }
 
@@ -2101,7 +2113,7 @@ section.opened.section-with-background {
 
 .page-template-what-we-do section h2 {
     text-transform: uppercase;
-    font-size: 73px;
+    font-size: 58px;
     margin-bottom: -9px;
 }
 
@@ -2324,7 +2336,7 @@ section.opened.section-with-background {
     font-weight: 600;
     padding-bottom: 0;
     margin-bottom: 0;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.6;
 }
 
@@ -2379,8 +2391,8 @@ footer #top-menu a{
 }
 
 .copyright {
-    font-style: italic;
-    font-size: 13px;
+    font-size: 9px;
+    color: #bebebe;
 }
 
 .second-section.section-with-background {
@@ -2400,7 +2412,7 @@ section h2 {
 
 .description {
     color: #404040;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.5;
     padding: 0px;
     margin-bottom: 25px;
@@ -2417,18 +2429,18 @@ section h2 {
 .second-section .description {
     margin: 0 auto;
     max-width: 1013px;
-    margin-bottom: 40px;;
+    margin-bottom: 24px;
 }
 
 .btn.btn-success {
     font-weight: 600;
-    padding: 14px 44px;
-    font-size: 23px;
+    padding: 11px 36px;
+    font-size: 18px;
     border-radius: 0;
 }
 
 .title-description-who-we-are {
-    font-size: 54px;
+    font-size: 43px;
 }
 
 .animation-words.title {
@@ -2436,7 +2448,6 @@ section h2 {
 }
 
 .mail-contact {
-    font-style: italic;
     font-weight: 500;
 }
 
@@ -2450,7 +2461,7 @@ section h3 {
 
 .logo-img {
     width: 234px;
-    margin-top: 23px;
+    margin-top: 13px;
 }
 
 .title-description-who-we-are {
@@ -2463,7 +2474,7 @@ section h3 {
 }
 
 section.section-with-background .description p {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.3;
     max-width: 1000px;
     margin: 0 auto;
@@ -2487,45 +2498,317 @@ footer .scroll-to {
 }
 
 .write-section .centered img {
-    width: 215px;
+    width: 172px;
 }
 
 .page-template-what-we-do .animation-words.title {
     margin-bottom: 15px;
     margin-left: 14px;
-    font-size: 85px;
+    font-size: 68px;
     font-weight: 700;
     letter-spacing: 0.9px;
     margin-top: 18px;
 }
-.plan-section .centered img{
-    height: 70px;
-    max-height: 70px;
+.plan-section .scivizgroup-logo img{
+    height: 56px;
+    max-height: 56px;
 
 }
 .write-section .more-workshop{
     width: 226px;
 }
-.visualize-section .centered img{
-    height: 59px;
-    max-height: 59px;
+.visualize-section .scivizgroup-logo img{
+    height: 48px;
+    max-height: 48px;
 }
 
 
 .engage-section .more-workshop {
-    width: 275px;
+    width: 220px;
 }
 
-.engage-section .centered img {
-    height: 56px;
-    max-height: 56px;
+.engage-section .scivizgroup-logo img {
+    height: 44px;
+    max-height: 44px;
+}
+.second-section h2,
+.first-section h2,
+.slider-section h2{
+    color: #004F59;
+
+}
+.plan-section .what-we-do-img img{
+    width: 137px;
+}
+.write-section .what-we-do-img img{
+    width: 180px;
+}
+.visualize-section .what-we-do-img img{
+    width: 138px;
+}
+.innovation-block .description-contact{
+    font-weight: 300;
+}
+.menu-footer-1-container a{
+    font-size: 12px;
+}
+.privacy-policy,
+.terms-of-service{
+    font-size: 12px;
+    font-weight: 400;
+    color: #bebebe;
+    float: left;
+    text-decoration: underline;
+}
+.textwidget.custom-html-widget{
+    float: left;
+}
+.widget-column.footer-widget-2{
+    display: flex;
+}
+.widget_text.widget.widget_custom_html{
+    margin-right: 6px;
+}
+
+.video-wrapper .arrow-down-img{
+    transform: rotate(0deg);
+}
+.arrow-down-img{
+    transform: rotate(180deg);
+}
+.plan-section h3{
+    color: #004B87;
+}
+.write-section h3{
+    color: #0083CA;
+}
+.visualize-section h3{
+    color: #2DA343;
+}
+.engage-section h3{
+    color: #004F59;
+}
+.page-template-what-we-do section.section-with-background.opened + section{
+    margin-top: 10px;
+}
+.description-contact{
+    margin-bottom: 12px;
+}
+.page-template-contact footer .arrow-up-img{
+    display: none;
+}
+.burger-trigger{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 15px;
+    left: 20px;
+}
+.mobile-menu-wrapper{
+    display: block;
+}
+.close-burger-trigger,
+.open-burger-trigger{
+    width: 50px;
+}
+#menu-item-96,
+#menu-item-97{
+    margin-top: -5px;
+}
+.open-innovation-block img{
+    width: 65px;
+}
+.viewmap-img-contact-ny{
+    left: 119px;
+    width: 93px;
+    position: relative;
+    top: 70px;
+}
+.ny-map-new{
+    margin-top: -93px;
+}
+.viewmap-img-contact-london{
+    left: 136px;
+    width: 93px;
+    position: relative;
+    top: 67px;
+}
+.london-map-new{
+    margin-top: -93px;
+}
+
+@media (min-width: 500px) {
+.mobile-menu-wrapper{
+    display: none;
+}
+}
+@media only screen and (min-width: 1300px) {
+    .animation-words.title{
+        font-size: 87px;
+    }
+    .title-description{
+        font-size: 34px;
+    }
+    .title-description-who-we-are {
+        font-size: 51px;
+    }
+    .description{
+        font-size: 24px;
+    }
+    .description{
+        font-size: 21px;
+    }
+    .content-wrapper {
+        max-width: 1280px;
+    }
+    .page-template-what-we-do .animation-words.title{
+        font-size: 87px;
+    }
+    .page-template-what-we-do section h2{
+        font-size: 68px;
+    }
+    section.section-with-background .description p{
+        font-size: 22px;
+    }
+    .description ul > li{
+        font-size: 24px;
+    }
+    .title-contact{
+        font-size: 42px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .mob-menu-slideout-over.show-nav-left .mob-menu-left-panel{
+        background-color: rgba(45, 163, 67, 0.7);
+    }
+    .desktop-wrapper{
+        display: none;
+    }
+    .section-with-background{
+        min-height: 0;
+    }
+    .title-description-who-we-are{
+        font-size: 31px;
+    }
+    .mobile-menu-wrapper{
+        display: none;
+    }
+    .page-template-what-we-do .animation-words.title{
+        font-size: 36px;
+    }
+    .page-template-what-we-do section h2{
+        font-size: 40px;
+    }
+    section.section-with-background .description p{
+        font-size: 11px;
+    }
+    .plan-section .description ul > li{
+        font-size: 12px;
+    }
+    .innovation span{
+        font-size: 10px;
+    }
+    .innovation span:before{
+        left: 65px;
+        top: 7px;
+    }
+    .innovation span:after {
+        right: 65px;
+        top: 7px;
+    }
+    .innovation span:before, .innovation span:after {
+        width: 157px !important;
+    }
+    .innovation-block {
+        padding: 14px 9px 0px;
+        position: relative;
+        margin: 0;
+    }
+    .scivizgroup-logo {
+        max-height: 37px;
+    }
+    .plan-section .what-we-do-img img {
+        width: 89px;
+    }
+    .innovation-block h3 {
+        font-size: 14px;
+    }
+    .innovation-block .description {
+        margin-bottom: 14px;
+        font-size: 11px;
+    }
+    .email-link {
+        font-size: 13px;
+    }
+    .innovation-block .content-wrapper .close-icon {
+        width: 26px;
+        height: 26px;
+    }
+    .page-template-what-we-do section.section-with-background:not(.plan-section) {
+        margin-top: 17px;
+    }
+    .description ul > li{
+        font-size: 12px;
+    }
+    .write-section .what-we-do-img img {
+        width: 117px;
+    }
+    .write-section .centered img {
+        width: 120px;
+    }
+    .visualize-section .what-we-do-img img {
+        width: 90px;
+    }
+    .scivizgroup-logo {
+        max-height: 30px;
+    }
+    .engage-section .more-workshop {
+        width: 143px;
+    }
+    .engage-section .centered img{
+        width: 37px;
+    }
+    .email-logo img {
+        height: 55px;
+        width: 55px;
+    }
+    .btn.btn-success {
+        font-weight: 600;
+        padding: 8px 29px;
+        font-size: 14px;
+        border-radius: 0;
+    }
+    .title-contact{
+        padding-bottom: 0;
+    }
+    .second-section-footer{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .animation-words.title {
+        font-size: 36px;
+        margin-bottom: 0px;
+    }
+    .title-wrapper .title-description {
+        font-size: 12px;
+    }
+    .scroll-to{
+        top: 10px;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
-
     .description {
         margin-bottom: 0px;
     }
+    /*.innovation-block .description{*/
+        /*font-weight: 300;*/
+        /*margin-bottom: 40px;*/
+        /*font-size: 19px;*/
+    /*}*/
 
     #page .description ul {
         margin-top: 20px;
@@ -2546,7 +2829,7 @@ footer .scroll-to {
         font-size: 24px;
     }
     .menu-item-type-custom {
-        padding-top: 10px;
+        /*padding-top: 10px;*/
     }
 
     .page-template-what-we-do .animation-words.title {
@@ -2558,6 +2841,7 @@ footer .scroll-to {
 
     }
 }
+
 
 @media only screen and (max-width: 1023px) {
     #mobmenuleft {
@@ -2648,10 +2932,6 @@ footer .scroll-to {
         font-size: 21px;
     }
 
-    .img-map:last-child {
-        margin-top: 25px;
-    }
-
     .title-description-who-we-are {
         margin-bottom: 0;
     }
@@ -2674,18 +2954,22 @@ footer .scroll-to {
     }
 
     #first-section {
-        padding: 20px 0;
+        padding: 0;
     }
 
     .animation-words.title {
-        font-size: 87px;
-        margin-bottom: 105px;
+        font-size: 36px;
+        /* margin-bottom: 105px; */
+    }
+    .scroll-to img {
+        width: 40px;
+        margin-bottom: 0;
     }
 
-    .innovation span:before,
-    .innovation span:after {
-        width: 100px !important;
-    }
+    /*.innovation span:before,*/
+    /*.innovation span:after {*/
+        /*width: 100px !important;*/
+    /*}*/
 
     .title-description-what-we-do {
         margin-bottom: 0;
@@ -2699,7 +2983,7 @@ footer .scroll-to {
         position: relative;
         left: 0;
         bottom: 0;
-        top: 26px;
+        top: 6px;
     }
 
     section h2 {
@@ -2728,3 +3012,4 @@ footer .scroll-to {
     }
 
 }
+

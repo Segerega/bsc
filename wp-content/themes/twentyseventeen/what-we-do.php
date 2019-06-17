@@ -33,7 +33,7 @@ $weDos = get_posts($args); ?>
                             <img class="more-workshop" src="<?= get_field('icon', $weDo->ID)['url'] ?>" alt="">
                         </div>
                         <div class="open-innovation-block">
-                            <img src="/resource/Images and video/btn_plus.png" alt="">
+                            <img src="/resource/Images and video/btn_plus.svg" alt="">
                         </div>
                     </div>
                 </div>

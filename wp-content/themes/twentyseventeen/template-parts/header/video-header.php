@@ -10,7 +10,7 @@
         </div>
 
         <a class='scroll-to scroll-to-first-section' data-scroll-to="#first-section">
-            <img class='arrow-down-img' src="/resource/Images and video/btn_arrow_down.svg" alt="">
+            <img class='arrow-down-img' src="/wp-content/themes/twentyseventeen/assets/images/btn_arrow_down.svg" alt="">
         </a>
 
     </div>

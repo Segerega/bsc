@@ -12,16 +12,16 @@
 <div class="row section-footer">
 
     <a class='scroll-to scroll-to-first-section' data-scroll-to="#first-section">
-        <img class='arrow-up-img ' src="/resource/Images and video/btn_arrow_down.svg" alt="">
+        <img class='arrow-up-img ' src="/wp-content/themes/twentyseventeen/assets/images/btn_arrow_down.svg" alt="">
     </a>
 
-    <div class="col col-sm-12 navigation-top">
+    <div class="navigation-top">
         <?php if ( ( twentyseventeen_is_frontpage() || ( is_home() && is_front_page() ) ) && has_custom_header() ) : ?>
             <a  class="scroll-to" data-scroll-to="body"><img  class="slider-arrow arrow-top" src="<?=get_template_directory_uri()?>/assets/images/arrow-up.svg" alt=""><span class="screen-reader-text"><?php _e( 'Scroll down to content', 'twentyseventeen' ); ?></span></a>
         <?php endif; ?>
     </div>
     <div class="col col-md-6 first-section-footer">
-        <div class="copyright">&copy;2019 Bioscience Communcations | A Daniel J. Edelman Company</div>
+        <a href="https://www.edelman.com/"><div class="copyright">&copy;2019 Bioscience Communcations | A Daniel J. Edelman Company</div></a>
         <div class="widget-column footer-widget-2"> <?php dynamic_sidebar('sidebar-2'); ?> </div>
     </div>
     <div class="col col-md-6 second-section-footer">

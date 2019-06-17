@@ -10,9 +10,9 @@
                  class="scivizgroup-logo">
         </div>
         <div class="description"><?=$weDo->innovation_description?></div>
-        <a href="mailto:info@bsc.com" class="email-link">Email Us for more information </a>
+        <a href="mailto:info@bioscicom.net" class="email-link">Email Us for more information </a>
         <div class="centered text-center email-logo">
-            <img src="<?= get_template_directory_uri() ?>/assets/images/btn_email.svg" alt="">
+            <a href="mailto:info@bioscicom.net"> <img class="email-img" src="<?= get_template_directory_uri() ?>/assets/images/btn_email.svg" alt=""></a>
         </div>
     </div>
 
