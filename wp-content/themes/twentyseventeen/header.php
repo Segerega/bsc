@@ -62,22 +62,28 @@ $_SESSION['video_id'] = (int)$_SESSION['video_id'] + 1;
                 <div class="mobile-menu-wrapper">
                     <div class="navigation-top">
                         <div class="wrap">
-                            <div class="burger-trigger"></div>
-                            <img class="close-burger-trigger" src="/wp-content/themes/twentyseventeen/assets/images/close-button.png" alt="">
-                            <img class="open-burger-trigger" src="/wp-content/themes/twentyseventeen/assets/images/menu-button.png" alt="">
-                            <div class="wrap-menu-social-menu wp-clearfix">
-                                <?php get_template_part('template-parts/navigation/navigation', 'top'); ?>
-                                <?php
-                                if (is_active_sidebar('social-icons')) : ?>
-                                    <div class="widget-column menu-social-icons">
-                                        <?php dynamic_sidebar('social-icons'); ?>
-                                    </div><!-- .widget-column menu-social-icons -->
+                                <div class="burger_trigger">
+                                    <img class="open_burger_trigger"
+                                         src="/wp-content/themes/twentyseventeen/assets/images/menu-button.png" alt="">
+                                </div>
+                            <div class="menu-wrapper">
+                                <img class="close-icon"
+                                     src="/wp-content/themes/twentyseventeen/assets/images/close-button.png" alt="">
 
-                                <?php endif ?>
-                            </div><!-- .wrap-menu-social-menu -->
-                            <a href="/">
-                                <img class="logo-img" src="/resource/Images and video/logo_BioScience.svg" alt="">
-                            </a>
+                                <div class="wrap-menu-social-menu wp-clearfix">
+                                    <?php get_template_part('template-parts/navigation/navigation', 'top'); ?>
+                                    <?php
+                                    if (is_active_sidebar('social-icons')) : ?>
+                                        <div class="widget-column menu-social-icons">
+                                            <?php dynamic_sidebar('social-icons'); ?>
+                                        </div><!-- .widget-column menu-social-icons -->
+
+                                    <?php endif ?>
+                                </div><!-- .wrap-menu-social-menu -->
+                                <a href="/">
+                                    <img class="logo-img" src="/resource/Images and video/logo_BioScience.svg" alt="">
+                                </a>
+                            </div>
                         </div><!-- .wrap -->
                     </div><!-- .navigation-top -->
                 </div>
@@ -86,20 +92,28 @@ $_SESSION['video_id'] = (int)$_SESSION['video_id'] + 1;
     </header>
 
 
-<?php
-if (in_array($post->ID, [13, 10])) {
-    include('template-parts/header/video-header.php');
-} else {
-    include('template-parts/header/header.php');
-}
+    <?php
+    if (in_array($post->ID, [13, 10])) {
+        include('template-parts/header/video-header.php');
+    } else {
+        include('template-parts/header/header.php');
+    }
 
-/*
- * If a regular post or page, and not the front page, show the featured image.
- * Using get_queried_object_id() here since the $post global may not be set before a call to the_post().
- */
-if ((is_single() || (is_page() && !twentyseventeen_is_frontpage())) && has_post_thumbnail(get_queried_object_id())) :
-    echo '<div class="single-featured-image-header">';
-    echo get_the_post_thumbnail(get_queried_object_id(), 'twentyseventeen-featured-image');
-    echo '</div><!-- .single-featured-image-header -->';
-endif;
-?>
+    /*
+     * If a regular post or page, and not the front page, show the featured image.
+     * Using get_queried_object_id() here since the $post global may not be set before a call to the_post().
+     */
+    if ((is_single() || (is_page() && !twentyseventeen_is_frontpage())) && has_post_thumbnail(get_queried_object_id())) :
+        echo '<div class="single-featured-image-header">';
+        echo get_the_post_thumbnail(get_queried_object_id(), 'twentyseventeen-featured-image');
+        echo '</div><!-- .single-featured-image-header -->';
+    endif;
+    ?>
+    <script>
+        jQuery(function () {
+            jQuery('.open_burger_trigger').click(function () {
+                jQuery('.menu-wrapper').show();
+            })
+        })
+    </script>
+    

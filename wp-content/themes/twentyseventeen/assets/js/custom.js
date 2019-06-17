@@ -55,7 +55,7 @@
             $("video.VideoPane-video").width($(window).height() * 1.779)
         }
     }
-    
+
     function addAboutBlank() {
 
         $('.menu-item-96, .menu-item-97').each(function(key, item){

@@ -1943,7 +1943,6 @@ body.page-template-contact {
     display: none;
 }
 
-
 .description-plan {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -1993,7 +1992,6 @@ body.page-template-contact #page > .content-wrapper {
 .textwidget > :hover {
     text-decoration: none;
 }
-
 
 .example-file {
     background-image: url("/resource/Images and video/what_we_do-first_section.jpg");
@@ -2047,12 +2045,15 @@ body.page-template-contact #page > .content-wrapper {
     background-repeat: no-repeat;
     min-height: 50vh;
 }
-.email-img{
+
+.email-img {
     margin-bottom: 20px;
 }
-.page-template-what-we-do section.section-with-background:not(.plan-section){
+
+.page-template-what-we-do section.section-with-background:not(.plan-section) {
     margin-top: 50px;
 }
+
 section.section-with-background {
     -webkit-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
@@ -2062,14 +2063,16 @@ section.section-with-background {
 section.opened.section-with-background {
     padding-bottom: 0px;
 }
-.mob-icon-menu.mob-menu-icon{
+
+.mob-icon-menu.mob-menu-icon {
     width: 30px;
     overflow: hidden;
 }
-.mob-icon-menu.mob-menu-icon:before{
-    -webkit-transform: scale(10,1);
-    -ms-transform: scale(10,1);
-    transform: scale(10,1);
+
+.mob-icon-menu.mob-menu-icon:before {
+    -webkit-transform: scale(10, 1);
+    -ms-transform: scale(10, 1);
+    transform: scale(10, 1);
 }
 
 .open-innovation-block {
@@ -2079,7 +2082,7 @@ section.opened.section-with-background {
     margin-left: -10px;
 }
 
-.innovation-block h3{
+.innovation-block h3 {
     font-size: 20px;
     font-family: poppins;
 }
@@ -2166,9 +2169,11 @@ section.opened.section-with-background {
 #first-section {
     margin-top: 10px;
 }
-.plan-section .innovation-block{
+
+.plan-section .innovation-block {
     background-color: #d9e3ec;
 }
+
 .plan-section h2 {
     color: #0a4382;
 }
@@ -2211,6 +2216,7 @@ section.opened.section-with-background {
 .visualize-section .innovation-block {
     background-color: #dff1e3;
 }
+
 .visualize-section h2 {
     color: #39a439;
 }
@@ -2227,9 +2233,11 @@ section.opened.section-with-background {
 .visualize-section .innovation.visualize span {
     color: #39a439;
 }
+
 .engage-section {
     margin-bottom: 80px;
 }
+
 .engage-section .innovation-block {
     background-color: #cbe3e5;
 }
@@ -2438,10 +2446,11 @@ footer {
 }
 
 footer #top-menu LI.menu-item-19 a,
-footer #top-menu LI.menu-item-18 a{
-    border-left:3px solid #333;
+footer #top-menu LI.menu-item-18 a {
+    border-left: 3px solid #333;
 }
-footer #top-menu a{
+
+footer #top-menu a {
     padding: 0 10px;
     line-height: 1;
 }
@@ -2567,19 +2576,21 @@ footer .scroll-to {
     letter-spacing: 0.9px;
     margin-top: 18px;
 }
-.plan-section .scivizgroup-logo img{
+
+.plan-section .scivizgroup-logo img {
     height: 56px;
     max-height: 56px;
 
 }
-.write-section .more-workshop{
+
+.write-section .more-workshop {
     width: 226px;
 }
-.visualize-section .scivizgroup-logo img{
+
+.visualize-section .scivizgroup-logo img {
     height: 48px;
     max-height: 48px;
 }
-
 
 .engage-section .more-workshop {
     width: 220px;
@@ -2589,279 +2600,413 @@ footer .scroll-to {
     height: 44px;
     max-height: 44px;
 }
+
 .second-section h2,
 .first-section h2,
-.slider-section h2{
+.slider-section h2 {
     color: #004F59;
 
 }
-.plan-section .what-we-do-img img{
+
+.plan-section .what-we-do-img img {
     width: 137px;
 }
-.write-section .what-we-do-img img{
+
+.write-section .what-we-do-img img {
     width: 180px;
 }
-.visualize-section .what-we-do-img img{
+
+.visualize-section .what-we-do-img img {
     width: 138px;
 }
-.innovation-block .description-contact{
+
+.innovation-block .description-contact {
     font-weight: 300;
 }
-.menu-footer-1-container a{
+
+.menu-footer-1-container a {
     font-size: 12px;
 }
+
 .privacy-policy,
-.terms-of-service{
+.terms-of-service {
     font-size: 12px;
     font-weight: 400;
     color: #bebebe;
     float: left;
     text-decoration: underline;
 }
-.textwidget.custom-html-widget{
+
+.textwidget.custom-html-widget {
     float: left;
 }
-.widget-column.footer-widget-2{
+
+.widget-column.footer-widget-2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
-.widget_text.widget.widget_custom_html{
+
+.widget_text.widget.widget_custom_html {
     margin-right: 6px;
 }
 
-.video-wrapper .arrow-down-img{
+.video-wrapper .arrow-down-img {
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
 }
-.arrow-down-img{
+
+.arrow-down-img {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-.plan-section h3{
+
+.plan-section h3 {
     color: #004B87;
 }
-.write-section h3{
+
+.write-section h3 {
     color: #0083CA;
 }
-.visualize-section h3{
+
+.visualize-section h3 {
     color: #2DA343;
 }
-.engage-section h3{
+
+.engage-section h3 {
     color: #004F59;
 }
-.page-template-what-we-do section.section-with-background.opened + section{
+
+.page-template-what-we-do section.section-with-background.opened + section {
     margin-top: 10px;
 }
-.description-contact{
+
+.description-contact {
     margin-bottom: 12px;
 }
-.page-template-contact footer .arrow-up-img{
+
+.page-template-contact footer .arrow-up-img {
     display: none;
 }
-.burger-trigger{
+
+.burger-trigger {
     position: absolute;
     height: 100px;
     width: 100px;
     top: 15px;
     left: 20px;
 }
-.mobile-menu-wrapper{
+
+.mobile-menu-wrapper {
     display: block;
 }
+
 .close-burger-trigger,
-.open-burger-trigger{
+.open-burger-trigger {
     width: 50px;
 }
+
 #menu-item-96,
-#menu-item-97{
+#menu-item-97 {
     margin-top: -5px;
 }
-.open-innovation-block img{
+
+.open-innovation-block img {
     width: 65px;
 }
-.viewmap-img-contact-ny{
+
+.viewmap-img-contact-ny {
     left: 119px;
     width: 93px;
     position: relative;
     top: 70px;
 }
-.ny-map-new{
+
+.ny-map-new {
     margin-top: -93px;
 }
-.viewmap-img-contact-london{
+
+.viewmap-img-contact-london {
     left: 136px;
     width: 93px;
     position: relative;
     top: 67px;
 }
 
-.london-map-new{
+.london-map-new {
     margin-top: -93px;
 }
-
+.open_burger_trigger{
+    width: 48px;
+    margin-top: 14px;
+    margin-left: 14px;
+}
+.mobile-menu-wrapper{
+    display: none;
+}
 /*.home.page #first-section{*/
-    /*padding-bottom: 200px;*/
+/*padding-bottom: 200px;*/
 /*}*/
 /*#slider-section{*/
-    /*margin-top: -120px;*/
-    /*position: relative;*/
-    /*z-index: 100;*/
+/*margin-top: -120px;*/
+/*position: relative;*/
+/*z-index: 100;*/
 /*}*/
 
-@media (min-width: 500px) {
-    .mobile-menu-wrapper{
-        display: none;
-    }
-}
 @media only screen and (min-width: 1300px) {
-    .animation-words.title{
+    .animation-words.title {
         font-size: 87px;
     }
-    .title-description{
+
+    .title-description {
         font-size: 34px;
     }
+
     .title-description-who-we-are {
         font-size: 51px;
     }
-    .description{
+
+    .description {
         font-size: 24px;
     }
-    .description{
+
+    .description {
         font-size: 21px;
     }
+
     .content-wrapper {
         max-width: 1280px;
     }
-    .page-template-what-we-do .animation-words.title{
+
+    .page-template-what-we-do .animation-words.title {
         font-size: 87px;
     }
-    .page-template-what-we-do section h2{
+
+    .page-template-what-we-do section h2 {
         font-size: 68px;
     }
-    section.section-with-background .description p{
+
+    section.section-with-background .description p {
         font-size: 22px;
     }
-    .description ul > li{
+
+    .description ul > li {
         font-size: 24px;
     }
-    .title-contact{
+
+    .title-contact {
         font-size: 42px;
     }
+
     .copyright {
         font-size: 14px;
     }
 }
-@media only screen and (max-width: 425px){
-    .mob-menu-slideout-over.show-nav-left .mob-menu-left-panel{
+
+@media only screen and (max-width: 425px) {
+    .mob-menu-slideout-over.show-nav-left .mob-menu-left-panel {
         background-color: rgba(45, 163, 67, 0.7);
     }
-    .desktop-wrapper{
+
+    .desktop-wrapper {
         display: none;
     }
-    .section-with-background{
+
+    .section-with-background {
         min-height: 0;
     }
-    .title-description-who-we-are{
+
+    .title-description-who-we-are {
         font-size: 31px;
     }
-    .mobile-menu-wrapper{
+
+    .menu {
         display: none;
     }
-    .page-template-what-we-do .animation-words.title{
+
+    .page-template-what-we-do .animation-words.title {
         font-size: 36px;
     }
-    .page-template-what-we-do section h2{
+
+    .page-template-what-we-do section h2 {
         font-size: 40px;
     }
-    section.section-with-background .description p{
+
+    section.section-with-background .description p {
         font-size: 11px;
     }
-    .plan-section .description ul > li{
+
+    .plan-section .description ul > li {
         font-size: 12px;
     }
-    .innovation span{
+
+    .innovation span {
         font-size: 10px;
     }
-    .innovation span:before{
+
+    .innovation span:before {
         left: 65px;
         top: 7px;
     }
+
     .innovation span:after {
         right: 65px;
         top: 7px;
     }
+
     .innovation span:before, .innovation span:after {
         width: 157px !important;
     }
+
     .innovation-block {
         padding: 14px 9px 0px;
         position: relative;
         margin: 0;
     }
+
     .scivizgroup-logo {
         max-height: 37px;
     }
+
     .plan-section .what-we-do-img img {
         width: 89px;
     }
+
     .innovation-block h3 {
         font-size: 14px;
     }
+
     .innovation-block .description {
         margin-bottom: 14px;
         font-size: 11px;
     }
+
     .email-link {
         font-size: 13px;
     }
+
     .innovation-block .content-wrapper .close-icon {
         width: 26px;
         height: 26px;
     }
+
     .page-template-what-we-do section.section-with-background:not(.plan-section) {
         margin-top: 17px;
     }
-    .description ul > li{
+
+    .description ul > li {
         font-size: 12px;
     }
+
     .write-section .what-we-do-img img {
         width: 117px;
     }
+
     .write-section .centered img {
         width: 120px;
     }
+
     .visualize-section .what-we-do-img img {
         width: 90px;
     }
+
     .scivizgroup-logo {
         max-height: 30px;
     }
+
     .engage-section .more-workshop {
         width: 143px;
     }
-    .engage-section .centered img{
+
+    .engage-section .centered img {
         width: 37px;
     }
+
     .email-logo img {
         height: 55px;
         width: 55px;
     }
+
     .btn.btn-success {
         font-weight: 600;
         padding: 8px 29px;
         font-size: 14px;
         border-radius: 0;
     }
-    .title-contact{
+
+    .title-contact {
         padding-bottom: 0;
     }
-    .second-section-footer{
+
+    .second-section-footer {
         display: none;
     }
 
+    .logo-img {
+        width: 188px;
+        margin-top: 2px;
+        text-align: center;
+
+    }
+    .wrap-menu-social-menu {
+         float: none;
+    }
+    #page ul, footer ul {
+        list-style: none;
+         display: block;
+         float: none;
+    }
+    .main-navigation li {
+        display: block;
+    }
+    .menu-wrapper{
+        border: 3px solid rgba(45, 163, 67, 0.75);
+        display: block;
+        height: 100vh;
+        width: 100%;
+        background: rgba(45, 163, 67, 0.7);
+        margin-top: -64px;
+    }
+    #top-menu > li > a {
+        text-transform: uppercase;
+        color: #ffff;
+        font-size: 33px;
+    }
+    .main-navigation a{
+        padding-left: 10px;
+    }
+    .navigation-top .menu-item.current_page_item > a {
+         border-top-color: rgba(45, 163, 67, 0.7);
+    }
+    .mobile-menu-wrapper{
+        display: block;
+    }
+    .menu-wrapper{
+        display: none;
+    }
+    .close-burger-trigger{
+        float: right;
+        margin-top: 9px;
+        margin-right: 10px;
+    }
+    .main-navigation a:first-child{
+        margin-top: 10px;
+    }
+    .navigation-top .menu-item > a {
+         padding-top: 0;
+    }
+    #top-menu{
+        padding-top: 40px;
+
+    }
+    .close-icon{
+        width: 38px;
+        margin-top: 18px;
+        float: right;
+        margin-right: 20px;
+    }
 }
 
 @media only screen and (max-width: 425px) {
@@ -2869,10 +3014,12 @@ footer .scroll-to {
         font-size: 36px;
         margin-bottom: 0px;
     }
+
     .title-wrapper .title-description {
         font-size: 12px;
     }
-    .scroll-to{
+
+    .scroll-to {
         top: 10px;
     }
 }
@@ -2881,12 +3028,12 @@ footer .scroll-to {
     .description {
         margin-bottom: 0px;
     }
+
     /*.innovation-block .description{*/
     /*font-weight: 300;*/
     /*margin-bottom: 40px;*/
     /*font-size: 19px;*/
     /*}*/
-
     #page .description ul {
         margin-top: 20px;
     }
@@ -2895,16 +3042,19 @@ footer .scroll-to {
         width: 254px;
         margin-top: 9px;
     }
-    .menu-main-menu-container a{
+
+    .menu-main-menu-container a {
         font-size: 20px;
     }
+
     .navigation-top .menu-item > a {
-        padding-top: 28px;
         border-top: 8px solid transparent;
     }
-    .menu-item-type-custom a{
+
+    .menu-item-type-custom a {
         font-size: 24px;
     }
+
     .menu-item-type-custom {
         /*padding-top: 10px;*/
     }
@@ -2913,12 +3063,12 @@ footer .scroll-to {
         letter-spacing: -0.9px;
         margin-top: 38px;
     }
+
     .scroll-to {
         bottom: 108px;
 
     }
 }
-
 
 @media only screen and (max-width: 1023px) {
     #mobmenuleft {
@@ -2948,10 +3098,6 @@ footer .scroll-to {
     .second-section .overlay2.more-shadow2 {
         -webkit-box-shadow: inset 0 0 297px 160px #fff;
         box-shadow: inset 0 0 297px 160px #fff;
-    }
-
-    .third-section p {
-
     }
 
     .first-description {
@@ -3044,6 +3190,7 @@ footer .scroll-to {
         font-size: 36px;
         /* margin-bottom: 105px; */
     }
+
     .scroll-to img {
         width: 40px;
         margin-bottom: 0;
@@ -3053,7 +3200,6 @@ footer .scroll-to {
     /*.innovation span:after {*/
     /*width: 100px !important;*/
     /*}*/
-
     .title-description-what-we-do {
         margin-bottom: 0;
     }
