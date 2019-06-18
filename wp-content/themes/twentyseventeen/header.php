@@ -71,7 +71,7 @@ $_SESSION['video_id'] = (int)$_SESSION['video_id'] + 1;
                                 </div>
                             <div class="menu-wrapper">
                                 <img class="close_burger_trigger"
-                                     src="/wp-content/themes/twentyseventeen/assets/images/close-button.png" alt="">
+                                     src="/wp-content/themes/twentyseventeen/assets/images/close.svg" alt="">
 
                                 <div class="wrap-menu-social-menu wp-clearfix">
                                     <?php get_template_part('template-parts/navigation/navigation', 'top'); ?>
@@ -110,17 +110,3 @@ $_SESSION['video_id'] = (int)$_SESSION['video_id'] + 1;
         echo '</div><!-- .single-featured-image-header -->';
     endif;
     ?>
-    <script>
-        jQuery(function () {
-            jQuery('.open_burger_trigger').click(function () {
-                jQuery('.menu-wrapper').slideToggle(500);
-            });
-        });
-            jQuery(function () {
-                jQuery('.close_burger_trigger').click(function () {
-                    jQuery('.menu-wrapper').close();
-                });
-            });
-
-    </script>
-    

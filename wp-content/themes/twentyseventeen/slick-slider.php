@@ -6,7 +6,7 @@ $args = array(
     'hide' => false,
     'meta_key' => 'order',
     'orderby' => 'meta_value_num',
-    'order' => 'desc',
+    'order' => 'asc',
 );
 
 $persons = get_posts($args);

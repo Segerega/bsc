@@ -136,6 +136,9 @@
     font-size: 24px;
 }
 
+.text-slider-wrapper a {
+    color:#fff;
+}
 .text-slider-wrapper p {
     text-align: left;
     margin-top: 27px;

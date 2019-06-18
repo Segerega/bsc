@@ -39,7 +39,7 @@ get_header(); ?>
     <div class="content-wrapper">
         <? include("slick-slider.php"); ?>
     </div>
-    <section class="second-section section-with-background" style="background-image: url('/wp-content/themes/twentyseventeen/assets/images/BKG_home02_cells.jpg');">
+    <section id="about-section" class="second-section section-with-background" style="background-image: url('/wp-content/themes/twentyseventeen/assets/images/BKG_home02_cells.jpg');">
         <div class="content-wrapper">
             <h2 class="title-description-who-we-are">About Us</h2>
             <h3>A REPUTATION BUILT ON SCIENCE PLUS VISION </h3>

@@ -2467,10 +2467,12 @@ footer #top-menu a {
     font-size: 9px;
     color: #bebebe;
 }
+
 section {
     position: relative;
 }
-section .reference{
+
+section .reference {
     position: absolute;
     top: 70px;
 }
@@ -2542,7 +2544,7 @@ section h3 {
 }
 
 .title-description-who-we-are {
-    /*padding-top: 59px !important;*/
+
 }
 
 .description p {
@@ -2616,6 +2618,15 @@ footer .scroll-to {
 .slider-section h2 {
     color: #004F59;
 
+}
+
+#about-section {
+    margin-top: -20px;
+}
+
+#slider-section {
+    margin-top: -20px;
+    margin-bottom: -20px;
 }
 
 .plan-section .what-we-do-img img {
@@ -2751,16 +2762,51 @@ footer .scroll-to {
     display: none;
 }
 
-/*.home.page #first-section{*/
-/*padding-bottom: 200px;*/
-/*}*/
-/*#slider-section{*/
-/*margin-top: -120px;*/
-/*position: relative;*/
-/*z-index: 100;*/
-/*}*/
+.menu-wrapper.open {
+    transform: translateX(0);
+}
+
+.menu-wrapper {
+    transform: translateX(-120%);
+    transition: all .2s ease-in-out;
+}
+
+.close-burger-trigger {
+    float: right;
+    margin-top: 9px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.menu-wrapper {
+    width: 100%;
+    background: rgba(45, 163, 67, 0.9);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    max-width: 440px;
+    padding: 30px;
+}
+
+.close_burger_trigger {
+    width: 38px;
+    margin-top: 18px;
+    float: right;
+    margin-right: 20px;
+}
+
+.mobile-menu-wrapper {
+    display: none;
+}
 
 @media only screen and (min-width: 1300px) {
+
+    .content-wrapper {
+        max-width: 96%;
+    }
+
     .animation-words.title {
         font-size: 87px;
     }
@@ -2807,6 +2853,307 @@ footer .scroll-to {
 
     .copyright {
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .content-wrapper{
+        max-width: 96%;
+    }
+    .description {
+        margin-bottom: 0px;
+    }
+
+    #page .description ul {
+        margin-top: 20px;
+    }
+
+    .menu-main-menu-container a {
+        font-size: 20px;
+    }
+
+    .navigation-top .menu-item > a {
+        border-top: 8px solid transparent;
+    }
+
+    .menu-item-type-custom a {
+        font-size: 24px;
+    }
+
+    .menu-item-type-custom {
+        /*padding-top: 10px;*/
+    }
+
+    .page-template-what-we-do .animation-words.title {
+        letter-spacing: -0.9px;
+        margin-top: 38px;
+    }
+
+    .scroll-to {
+        bottom: 108px;
+
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    #mobmenuleft {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0 73px;
+    }
+
+    ul > #mobmenuleft, ul > #mobmenuright {
+        padding: 0;
+        margin: 0 73px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .mobile-menu-wrapper #top-menu {
+        display: block;
+    }
+
+    .mobile-menu-wrapper {
+        display: block;
+    }
+
+    .desktop-wrapper {
+        display: none;
+    }
+
+    .logo-img {
+        width: 188px;
+        margin-top: 2px;
+        text-align: center;
+
+    }
+
+    .wrap-menu-social-menu {
+        float: none;
+    }
+
+    .main-navigation li {
+        display: block;
+    }
+
+    #top-menu > li > a {
+        text-transform: uppercase;
+        color: #ffff;
+        font-size: 33px;
+    }
+
+    .main-navigation a {
+        padding-left: 10px;
+    }
+
+    .navigation-top .menu-item.current_page_item > a {
+        border-top-color: rgba(45, 163, 67, 0.7);
+    }
+
+    .navigation-top .menu-item > a {
+        padding-top: 0;
+    }
+
+    .title-wrapper.text-center {
+        width: 100%;
+        text-align: center;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+
+    .open_burger_trigger {
+        width: 48px;
+        float: left;
+        margin-top: 14px;
+        margin-left: 14px;
+    }
+
+    .logo-img {
+        width: 234px;
+        margin-top: -2px;
+        margin-left: 23px;
+    }
+
+    #top-menu {
+        padding-top: 40px;
+
+    }
+
+    .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-96,
+    .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-97 {
+        display: inline-block;
+    }
+
+    .wrapper {
+        width: 750px;
+    }
+
+    .description {
+        padding: 0;
+        margin-bottom: 15px;
+    }
+
+    .second-section .overlay2.more-shadow2 {
+        -webkit-box-shadow: inset 0 0 297px 160px #fff;
+        box-shadow: inset 0 0 297px 160px #fff;
+    }
+
+    .first-description {
+        margin-bottom: 5px;
+        margin: 0 10px;
+    }
+
+    .content-wrapper p {
+        margin: 0 10px;
+    }
+
+    .col-sm-12.col-md-4.table-contact.position.contact-flex-column {
+        text-align: center;
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
+
+    .map-col {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    #map-new-york,
+    #map-london {
+        width: 100%;
+        height: 60vh;
+        border: 3px solid #aeadac;
+    }
+
+    #map-new-york {
+        position: relative;
+        overflow: hidden;
+        float: left;
+        width: 100%;
+    }
+
+    #map-london {
+        position: relative;
+        overflow: hidden;
+        float: right;
+        width: 100%;
+        height: 50%;
+    }
+
+    .map-col.col-sm {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .wrap-site {
+        margin: 0 5% 5%;
+    }
+
+    .wrap-site .row {
+        margin-top: 15px;
+    }
+
+    .title-contact {
+        margin: 15px 5%;
+        font-size: 21px;
+    }
+
+    .title-description-who-we-are {
+        margin-bottom: 0;
+    }
+
+    .description {
+        font-size: 19px;
+        margin: 5px 5px;
+    }
+
+    .video-wrapper {
+        height: 50vh;
+    }
+
+    .second-section {
+        padding: 0;
+    }
+
+    .second-section {
+        padding: 0;
+    }
+
+    #first-section {
+        padding: 30px 0 90px;
+        margin-bottom: -30px;
+    }
+
+    .content-wrapper {
+        max-width: 96%;
+    }
+
+    .second-section-footer {
+        display: none;
+    }
+
+    .animation-words.title {
+        font-size: 55px;
+        /* margin-bottom: 105px; */
+    }
+
+    .site-overlay {
+        display: none;
+    }
+
+    .scroll-to img {
+        width: 40px;
+        margin-bottom: 0;
+    }
+
+    .title-description-what-we-do {
+        margin-bottom: 0;
+    }
+
+    .description p {
+        font-size: 14px;
+    }
+
+    .scroll-to {
+        bottom: 10%;
+    }
+
+    section h2 {
+        font-size: 31px;
+    }
+
+    .first-section h2 {
+        font-size: 31px;
+    }
+
+    .title-wrapper .title-description {
+        font-size: 24px;
+    }
+
+    .media-contact {
+        margin-right: 10px;
+    }
+
+    .media-contact:nth-child(2) {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    #map-london {
+        float: left;
+    }
+
+    .section-with-background {
+        min-height: auto;
+    }
+
+    .copyright {
+        font-size: 11px;
     }
 }
 
@@ -2949,108 +3296,6 @@ footer .scroll-to {
         display: none;
     }
 
-    .logo-img {
-        width: 188px;
-        margin-top: 2px;
-        text-align: center;
-
-    }
-
-    .wrap-menu-social-menu {
-        float: none;
-    }
-
-    #page ul, footer ul {
-        list-style: none;
-        display: block;
-        margin-top: 34px;
-        margin-left: -59px;
-    }
-
-    .main-navigation li {
-        display: block;
-    }
-
-    .menu-wrapper {
-        border: 3px solid rgba(45, 163, 67, 0.75);
-        display: block;
-        height: 100vh;
-        width: 100%;
-        background: rgba(45, 163, 67, 0.7);
-        margin-top: -79px;
-    }
-
-    #top-menu > li > a {
-        text-transform: uppercase;
-        color: #ffff;
-        font-size: 33px;
-    }
-
-    .main-navigation a {
-        padding-left: 10px;
-    }
-
-    .navigation-top .menu-item.current_page_item > a {
-        border-top-color: rgba(45, 163, 67, 0.7);
-    }
-
-    .mobile-menu-wrapper {
-        display: block;
-    }
-
-    .menu-wrapper {
-        display: none;
-    }
-
-    .close-burger-trigger {
-        float: right;
-        margin-top: 9px;
-        margin-right: 10px;
-    }
-
-    .navigation-top .menu-item > a {
-        padding-top: 0;
-    }
-
-    #top-menu {
-        padding-top: 40px;
-
-    }
-
-    .close_burger_trigger {
-        width: 38px;
-        margin-top: 18px;
-        float: right;
-        margin-right: 20px;
-    }
-
-    .title-wrapper.text-center {
-        width: 100%;
-        text-align: center;
-        max-width: 1000px;
-        margin: 0 auto;
-        margin-top: 91px;
-    }
-
-    .open_burger_trigger {
-        width: 48px;
-        float: left;
-        margin-top: 14px;
-        margin-left: 14px;
-    }
-
-    .logo-img {
-        width: 234px;
-        margin-top: -2px;
-        margin-left: 23px;
-    }
-    .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-96,
-    .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-97{
-        display: inline-block;
-    }
-}
-
-@media only screen and (max-width: 425px) {
     .animation-words.title {
         font-size: 36px;
         margin-bottom: 0px;
@@ -3063,218 +3308,4 @@ footer .scroll-to {
     .scroll-to {
         top: 10px;
     }
-}
-
-@media only screen and (max-width: 1300px) {
-    .description {
-        margin-bottom: 0px;
-    }
-
-    /*.innovation-block .description{*/
-    /*font-weight: 300;*/
-    /*margin-bottom: 40px;*/
-    /*font-size: 19px;*/
-    /*}*/
-    #page .description ul {
-        margin-top: 20px;
-    }
-
-
-    .menu-main-menu-container a {
-        font-size: 20px;
-    }
-
-    .navigation-top .menu-item > a {
-        border-top: 8px solid transparent;
-    }
-
-    .menu-item-type-custom a {
-        font-size: 24px;
-    }
-
-    .menu-item-type-custom {
-        /*padding-top: 10px;*/
-    }
-
-    .page-template-what-we-do .animation-words.title {
-        letter-spacing: -0.9px;
-        margin-top: 38px;
-    }
-
-    .scroll-to {
-        bottom: 108px;
-
-    }
-}
-
-@media only screen and (max-width: 1023px) {
-    #mobmenuleft {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        margin: 0 73px;
-    }
-
-    ul > #mobmenuleft, ul > #mobmenuright {
-        padding: 0;
-        margin: 0 73px;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    .wrapper {
-        width: 750px;
-    }
-
-    .description {
-        padding: 0;
-        margin-bottom: 15px;
-    }
-
-    .second-section .overlay2.more-shadow2 {
-        -webkit-box-shadow: inset 0 0 297px 160px #fff;
-        box-shadow: inset 0 0 297px 160px #fff;
-    }
-
-    .first-description {
-        margin-bottom: 5px;
-        margin: 0 10px;
-    }
-
-    .content-wrapper p {
-        margin: 0 10px;
-    }
-
-    .col-sm-12.col-md-4.table-contact.position.contact-flex-column {
-        text-align: center;
-        margin-bottom: 16px;
-        margin-top: 16px;
-    }
-
-    .map-col {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-
-    #map-new-york,
-    #map-london {
-        width: 100%;
-        height: 60vh;
-        border: 3px solid #aeadac;
-    }
-
-    #map-new-york {
-        position: relative;
-        overflow: hidden;
-        float: left;
-        width: 100%;
-    }
-
-    #map-london {
-        position: relative;
-        overflow: hidden;
-        float: right;
-        width: 100%;
-        height: 50%;
-    }
-
-    .map-col.col-sm {
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-
-    .wrap-site {
-        margin: 0 5% 5%;
-    }
-
-    .wrap-site .row {
-        margin-top: 15px;
-    }
-
-    .title-contact {
-        margin: 15px 5%;
-        font-size: 21px;
-    }
-
-    .title-description-who-we-are {
-        margin-bottom: 0;
-    }
-
-    .description {
-        font-size: 14px;
-        margin: 0 5px;
-    }
-
-    .video-wrapper {
-        height: 255px;
-    }
-
-    .second-section {
-        padding: 0;
-    }
-
-    .second-section {
-        padding: 0;
-    }
-
-    #first-section {
-        padding: 0;
-    }
-
-    .animation-words.title {
-        font-size: 36px;
-        /* margin-bottom: 105px; */
-    }
-
-    .scroll-to img {
-        width: 40px;
-        margin-bottom: 0;
-    }
-
-    /*.innovation span:before,*/
-    /*.innovation span:after {*/
-    /*width: 100px !important;*/
-    /*}*/
-    .title-description-what-we-do {
-        margin-bottom: 0;
-    }
-
-    .description p {
-        font-size: 14px;
-    }
-
-    .scroll-to {
-        position: relative;
-        left: 0;
-        bottom: 0;
-        top: 6px;
-    }
-
-    section h2 {
-        font-size: 31px;
-    }
-
-    .first-section h2 {
-        font-size: 31px;
-    }
-
-    .title-wrapper .title-description {
-        font-size: 14px;
-    }
-
-    .media-contact {
-        margin-right: 10px;
-    }
-
-    .media-contact:nth-child(2) {
-        margin-right: 0;
-        margin-left: 10px;
-    }
-
-    #map-london {
-        float: left;
-    }
-
 }

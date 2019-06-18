@@ -2,8 +2,26 @@
 
 
     $(document).ready(function(){
+        //
+        // $(function () {
+        //     $('.open_burger_trigger').click(function () {
+        //         $('.menu-wrapper').slideToggle(500);
+        //     });
+        // });
+        // $(function () {
+        //     $('.close_burger_trigger').click(function () {
+        //     });
+        // });
+        //
 
+        $(document).on('click', '.close_burger_trigger', function () {
+            $('.menu-wrapper').removeClass('open');
 
+        });
+
+        $(document).on('click', '.open_burger_trigger', function () {
+            $('.menu-wrapper').addClass('open');
+        });
 
         $('.scroll-to').click(function () {
             var $this = $(this),
