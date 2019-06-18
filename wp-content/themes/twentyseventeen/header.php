@@ -63,11 +63,14 @@ $_SESSION['video_id'] = (int)$_SESSION['video_id'] + 1;
                     <div class="navigation-top">
                         <div class="wrap">
                                 <div class="burger_trigger">
+                                    <a href="/">
+                                        <img class="logo-img" src="/resource/Images and video/logo_BioScience.svg" alt="">
+                                    </a>
                                     <img class="open_burger_trigger"
                                          src="/wp-content/themes/twentyseventeen/assets/images/menu-button.png" alt="">
                                 </div>
                             <div class="menu-wrapper">
-                                <img class="close-icon"
+                                <img class="close_burger_trigger"
                                      src="/wp-content/themes/twentyseventeen/assets/images/close-button.png" alt="">
 
                                 <div class="wrap-menu-social-menu wp-clearfix">
@@ -80,9 +83,7 @@ $_SESSION['video_id'] = (int)$_SESSION['video_id'] + 1;
 
                                     <?php endif ?>
                                 </div><!-- .wrap-menu-social-menu -->
-                                <a href="/">
-                                    <img class="logo-img" src="/resource/Images and video/logo_BioScience.svg" alt="">
-                                </a>
+
                             </div>
                         </div><!-- .wrap -->
                     </div><!-- .navigation-top -->
@@ -112,8 +113,14 @@ $_SESSION['video_id'] = (int)$_SESSION['video_id'] + 1;
     <script>
         jQuery(function () {
             jQuery('.open_burger_trigger').click(function () {
-                jQuery('.menu-wrapper').show();
-            })
-        })
+                jQuery('.menu-wrapper').slideToggle(500);
+            });
+        });
+            jQuery(function () {
+                jQuery('.close_burger_trigger').click(function () {
+                    jQuery('.menu-wrapper').close();
+                });
+            });
+
     </script>
     

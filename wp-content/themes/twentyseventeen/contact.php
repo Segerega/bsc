@@ -9,16 +9,15 @@ get_header(); ?>
     <div class="content-wrapper contact-section">
         <div class="row">
             <div class="col-sm-12 col-md-4 table-contact position contact-flex-column">
-                <a class="a-contact" href="#">
+                <a class="a-contact" href="mailto:info@bioscicom.net">
                     <div class="mail-contact">info@bioscicom.net</div>
                 </a>
             </div>
             <div class="col position media-contact contact-flex-column contact-flex-row link-ny">
                 <div class="title-contact-map">new york</div>
                 <div class="description-contact">250 Hudson Street<br>New York. NY 10013. USA<br>+212.704.1000</div>
-                <div class="map-new-york-img img-map">
-                    <img class="viewmap-img-contact-ny" src="/wp-content/themes/twentyseventeen/assets/images/btn_viewmap.svg" alt="">
-                    <img class="ny-map-new" src="/wp-content/themes/twentyseventeen/assets/images/NYC_map_new.jpg" alt="">
+                <div class="map-new-york-img ">
+                    <img class="img-map ny-map-new" src="/wp-content/themes/twentyseventeen/assets/images/NYC_map-new-ph.jpg" alt="">
                     <a class="link" href="#"></a>
                 </div>
             </div>
@@ -28,8 +27,7 @@ get_header(); ?>
                 <div class="description-contact">105 Victoria Street<br>London SWIE 6QT. UK<br>+7.302.80346801</div>
 
                 <div class="map-london-img">
-                    <img class="viewmap-img-contact-london" src="/wp-content/themes/twentyseventeen/assets/images/btn_viewmap.svg" alt="">
-                    <img class="img-map london-map-new" src="/wp-content/themes/twentyseventeen/assets/images/LondonMap_new.jpg"
+                    <img class="img-map london-map-new" src="/wp-content/themes/twentyseventeen/assets/images/LondonMap-new-ph.jpg"
                          alt="">
                 </div>
             </div>
@@ -140,17 +138,17 @@ get_header(); ?>
                     }
                 ]
             },
-            {
-                "featureType": "poi",
-                "stylers": [
-                    {
-                        "color": "#c0c0c0"
-                    },
-                    {
-                        "visibility": "simplified"
-                    }
-                ]
-            },
+            // {
+            //     "featureType": "poi",
+            //     "stylers": [
+            //         {
+            //             "color": "#c0c0c0"
+            //         },
+            //         {
+            //             "visibility": "simplified"
+            //         }
+            //     ]
+            // },
             {
                 "featureType": "poi",
                 "elementType": "geometry",
