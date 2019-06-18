@@ -39,27 +39,6 @@ get_header(); ?>
     <div id="map-london" class="london-click map-container"></div>
 </div>
 
-<script>
-
-    jQuery(document).ready(function () {
-        jQuery('.link-ny').on('click', function () {
-            jQuery('.map-wrapper').toggleClass('open-map open-ny');
-        });
-
-        jQuery('.link-london').on('click', function () {
-            jQuery('.map-wrapper').toggleClass('open-map open-london');
-        });
-
-        jQuery('.map-wrapper').on('click', function (e) {
-            if (jQuery(e.target).is('.map-wrapper')) {
-                jQuery('.map-wrapper').removeClass('open-map open-london open-ny');
-            }
-            ;
-        });
-
-    });
-</script>
-
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMTF4gLcdN0VFjAenar22NeTJfqUz4x4A&callback=initMap"
         async defer></script>
 <script>
@@ -284,6 +263,7 @@ get_header(); ?>
             }
         ]
     ;
+
     var newYork = {lat: 40.741051, lng: -74.005095};
     var london = {lat: 51.497272, lng: -0.136857};
     var mapNY;
@@ -300,6 +280,7 @@ get_header(); ?>
         styles: styles,
         fullscreenControl: true
     };
+
     var optionLondon;
     optionLondon = Object.assign({}, optionNY);
     optionLondon.center = london;
@@ -329,8 +310,6 @@ get_header(); ?>
     /* Always set the mapNY height explicitly to define the size of the div
      * element that contains the mapNY. */
 
-</style>
-<style>
     /*There style must be here*/
     .section-with-background {
         background-position: center;
@@ -344,8 +323,7 @@ get_header(); ?>
         padding-top: 64px;
         margin-top: -200px;
     }
-</style>
-<style>
+
     @media only screen and (max-width: 992px) {
         h1 {
             font-size: 30px;

@@ -20,11 +20,15 @@
     border: none;
 }
 
+.slider-arrow.slick-disabled {
+    opacity: 0;
+}
 .slider-arrow {
     position: absolute;
     height: 64px;
     top: 50%;
     margin-top: -47px;
+    transition: all .1s ease-in-out;
 }
 
 .slider-arrow.arrow-left {
@@ -51,7 +55,7 @@
 
 .person-image, .person-image-second, .person-image-second-overlay, .person-image-third {
     background-size: cover;
-    background-position: center -2px;
+    background-position: center;
     position: relative;
     width: 100%;
     max-width: 300px;

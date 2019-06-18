@@ -2084,7 +2084,8 @@ section.opened.section-with-background {
 
 .innovation-block h3 {
     font-size: 20px;
-    font-family: poppins;
+    font-family: Poppins;
+    font-weight: 300;
 }
 
 .innovation-block {
@@ -2369,10 +2370,10 @@ section.opened.section-with-background {
 }
 
 .media-contact {
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
-.img-map {
+.map-new-york-img, .map-london-img {
     border: 1px solid #999999;
 }
 
@@ -2466,9 +2467,17 @@ footer #top-menu a {
     font-size: 9px;
     color: #bebebe;
 }
+section {
+    position: relative;
+}
+section .reference{
+    position: absolute;
+    top: 70px;
+}
 
 .second-section.section-with-background {
     padding: 0;
+    position: relative;
 }
 
 .animation-words.title {
@@ -2529,7 +2538,7 @@ section h3 {
 
 .logo-img {
     width: 234px;
-    margin-top: 13px;
+    margin-top: 3px;
 }
 
 .title-description-who-we-are {

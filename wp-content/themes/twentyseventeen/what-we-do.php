@@ -16,8 +16,9 @@ $weDos = get_posts($args); ?>
     <div id="first-section">
         <? foreach ($weDos as $weDo): ?>
 
-            <section class="<?= strtolower($weDo->post_title) ?>-section text-center section-with-background"
+            <section id="<?= strtolower($weDo->post_title) ?>-section" class="<?= strtolower($weDo->post_title) ?>-section text-center section-with-background"
                      style="background-image: url(<?= get_field('background', $weDo->ID)['url'] ?>);">
+                <div id="<?= strtolower($weDo->post_title) ?>-section-reference" class="reference"></div>
                 <div class="content-wrapper">
                     <h2 class="title-description-what-we-do"><?= $weDo->post_title ?></h2>
                     <div class="description"><?= $weDo->post_content ?></div>

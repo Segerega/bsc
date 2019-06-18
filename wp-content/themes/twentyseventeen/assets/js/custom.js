@@ -40,6 +40,21 @@
             $('body').addClass('site-loaded');
         });
 
+        $('.link-ny').on('click', function () {
+            // $('.map-wrapper').toggleClass('open-map open-ny');
+        });
+
+        $('.link-london').on('click', function () {
+            // $('.map-wrapper').toggleClass('open-map open-london');
+        });
+
+        $('.map-wrapper').on('click', function (e) {
+
+            if ($(e.target).is('.map-wrapper')) {
+                // $('.map-wrapper').removeClass('open-map open-london open-ny');
+            };
+        });
+
         addAboutBlank();
     });
 
@@ -54,6 +69,9 @@
 
             $("video.VideoPane-video").width($(window).height() * 1.779)
         }
+
+        $('.section-with-background .reference').css({top:-$('#masthead').height()+10})
+
     }
 
     function addAboutBlank() {
