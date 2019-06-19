@@ -1632,12 +1632,11 @@ BRANDING
 
 .scroll-to img {
     width: 82px;
-    margin-bottom: -76px;
 }
 
 .scroll-to {
     position: absolute;
-    bottom: 81px;
+    bottom: 10%;
     cursor: pointer;
     z-index: 1;
     left: 50%;
@@ -1970,10 +1969,9 @@ body.page-template-contact #page > .content-wrapper {
 }
 
 .description-contact {
-    color: #7b7674;
+    color: #565656;
     line-height: 25px;
     font-size: 16px;
-    /*color: #64b978;*/
 }
 
 .title-contact-map {
@@ -2021,6 +2019,17 @@ body.page-template-contact #page > .content-wrapper {
     margin-top: 10px;
 }
 
+.write-section .more-workshop {
+    margin-left: -16px;
+}
+
+.visualize-section .more-workshop {
+    margin-left: 0;
+}
+.engage-section .more-workshop {
+
+    margin-left: -27px;
+}
 .more-workshop {
     width: 172px;
     margin-top: -10px;
@@ -2105,6 +2114,14 @@ section.opened.section-with-background {
     font-size: 20px;
     font-weight: 600;
     text-decoration: underline;
+}
+
+.visualize-section .scivizgroup-logo {
+    margin-left: 0;
+}
+
+.engage-section .scivizgroup-logo {
+    margin-left: -27px;
 }
 
 .scivizgroup-logo {
@@ -2375,6 +2392,10 @@ section.opened.section-with-background {
 
 .map-new-york-img, .map-london-img {
     border: 1px solid #999999;
+}
+
+.img-map{
+    display: block;
 }
 
 .person-slider {
@@ -2729,11 +2750,6 @@ footer .scroll-to {
     width: 50px;
 }
 
-#menu-item-96,
-#menu-item-97 {
-    margin-top: -5px;
-}
-
 .open-innovation-block img {
     width: 65px;
 }
@@ -2788,6 +2804,7 @@ footer .scroll-to {
     top: 0;
     max-width: 440px;
     padding: 30px;
+    z-index: 10;
 }
 
 .close_burger_trigger {
@@ -2799,6 +2816,11 @@ footer .scroll-to {
 
 .mobile-menu-wrapper {
     display: none;
+}
+
+.home.page .first-section{
+    margin-bottom: -100px;
+    padding-bottom: 140px;
 }
 
 @media only screen and (min-width: 1300px) {
@@ -2857,6 +2879,12 @@ footer .scroll-to {
 }
 
 @media only screen and (max-width: 1300px) {
+    .section-with-background {
+
+        min-height: 30vh;
+
+    }
+
     .content-wrapper{
         max-width: 96%;
     }
@@ -2965,11 +2993,15 @@ footer .scroll-to {
         margin-top: 5%;
     }
 
+    .burger_trigger {
+        cursor: pointer;
+    }
     .open_burger_trigger {
         width: 48px;
         float: left;
         margin-top: 14px;
         margin-left: 14px;
+        cursor: pointer;
     }
 
     .logo-img {
@@ -3306,6 +3338,6 @@ footer .scroll-to {
     }
 
     .scroll-to {
-        top: 10px;
+        bottom: 10%;
     }
 }

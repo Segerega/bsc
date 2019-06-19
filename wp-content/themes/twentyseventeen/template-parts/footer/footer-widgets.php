@@ -11,7 +11,7 @@
 ?>
 <div class="row section-footer">
 
-    <a class='scroll-to scroll-to-first-section' data-scroll-to="#first-section">
+    <a class='scroll-to scroll-to-first-section' data-scroll-to="body">
         <img class='arrow-up-img ' src="/wp-content/themes/twentyseventeen/assets/images/btn_arrow_down.svg" alt="">
     </a>
 

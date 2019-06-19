@@ -27,19 +27,16 @@ $persons = get_posts($args);
                              $image_title = get_the_title($image_id);
                              ?>
 
-                             alt="<?=$image_alt?>"
-                             title="<?=$image_title?>"
+                             alt="<?=$image_alt ? $image_alt : $image_title?>"
                              style="background-image: url('<?php echo get_the_post_thumbnail_url($person->ID) ?>')">
                             <div class="person-image-second"
                                  style="background-image: url('<?php echo get_field('person_second_image', $person->ID)['url'] ?>')"
-                                 alt="<?=get_field('person_second_image', $person->ID)['alt']?>"
-                                 title="<?=get_field('person_second_image', $person->ID)['title']?>"
+                                 alt="<?=get_field('person_second_image', $person->ID)['title']? get_field('person_second_image', $person->ID)['alt']: get_field('person_second_image', $person->ID)['title']?>"
                             >
                             </div>
                             <div class="person-image-second-overlay"></div>
                             <div class="person-image-third"
-                                 alt="<?=get_field('person_third_image', $person->ID)['alt']?>"
-                                 title="<?=get_field('person_third_image', $person->ID)['title']?>"
+                                 alt="<?=get_field('person_second_image', $person->ID)['title']? get_field('person_second_image', $person->ID)['alt']: get_field('person_second_image', $person->ID)['title']?>"
                                  style="background-image: url('<?php echo get_field('person_third_image', $person->ID)['url'] ?>')">
                             </div>
                         </div>
