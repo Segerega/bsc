@@ -3305,7 +3305,11 @@ footer .scroll-to {
     }
 
     .engage-section .centered img {
-        width: 37px;
+        width: 112px;
+    }
+
+    .engage-section .scivizgroup-logo {
+        margin-left: -2px;
     }
 
     .email-logo img {

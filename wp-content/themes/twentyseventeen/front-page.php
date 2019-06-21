@@ -31,8 +31,7 @@ get_header(); ?>
         <div class="content-wrapper">
             <h2 class="title-description-who-we-are"> Standout Leadership</h2>
             <div class="description">
-                Every BioScience account team is a custom blendof content, industry,<br> and executional expertise—amplyseasoned by our leadership below
-            </div>
+                Every BioScience account team is a custom blend of content, industry,<br> and executional expertise—amply seasoned by our leadership below            </div>
         </div>
     </section>
 
@@ -51,9 +50,6 @@ get_header(); ?>
                 to unique creative and competitive advantages.
             </div>
             <div class="description">
-                Since its founding in 1995, BioScience has adapted to, and thrived under, profound changes in healthcare
-                industry regulation, as well as exciting scientific advances
-                from genomics to immunotherapy.
                 Since its founding in 1995, BioScience has adapted to, and thrived under, profound changes in healthcare
                 industry regulation, as well as exciting scientific advances
                 from genomics to immunotherapy.
