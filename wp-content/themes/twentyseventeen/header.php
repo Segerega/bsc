@@ -15,7 +15,11 @@
 session_start();
 //var_dump($_SESSION['video_id']);
 
-$_SESSION['video_id'] = (int)$_SESSION['video_id'] + 1;
+if(time() - $_SESSION['time_video_id'] > 10){
+    $_SESSION['time_video_id'] = time();
+    $_SESSION['video_id'] = (int)$_SESSION['video_id'] + 1;
+}
+
 //var_dump($_SESSION['video_id']);
 
 ?><!DOCTYPE html>
@@ -32,7 +36,9 @@ $_SESSION['video_id'] = (int)$_SESSION['video_id'] + 1;
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <?php wp_head(); ?>
 
-
+    <script>
+        console.log(<?=$_SESSION['video_id']?>, <?=time() - $_SESSION['time_video_id']?>, <?=(int)$_SESSION['video_id']  % 2 + 1?>);
+    </script>
 </head>
 <body <?php body_class(); ?>>
 <div id="page" class="site">

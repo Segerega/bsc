@@ -1707,21 +1707,28 @@ BRANDING
     align-content: center;
 }
 
+.video-loaded .video-overlay {
+    opacity: 0;
+}
 .video-overlay {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0);
-    z-index: -1;
+    background: rgba(255, 255, 255, 1);
+    z-index: 0;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .video-wrapper .video {
     width: 120%;
-    height: auto;
+    height: 120%;
     position: absolute;
-    z-index: -2;
+    z-index: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -1741,6 +1748,7 @@ BRANDING
     max-width: 1000px;
     margin: 0 auto;
     margin-top: 16px;
+    position: relative;
 }
 
 .animation-words.title {
@@ -2026,10 +2034,12 @@ body.page-template-contact #page > .content-wrapper {
 .visualize-section .more-workshop {
     margin-left: 0;
 }
+
 .engage-section .more-workshop {
 
     margin-left: -27px;
 }
+
 .more-workshop {
     width: 172px;
     margin-top: -10px;
@@ -2125,7 +2135,7 @@ section.opened.section-with-background {
 }
 
 .scivizgroup-logo {
-    max-height: 50px;
+    max-height: 75px;
     margin-bottom: 30px;
     margin-left: 8px;
 }
@@ -2392,9 +2402,10 @@ section.opened.section-with-background {
 
 .map-new-york-img, .map-london-img {
     border: 1px solid #999999;
+    padding: 1px;
 }
 
-.img-map{
+.img-map {
     display: block;
 }
 
@@ -2426,7 +2437,7 @@ section.opened.section-with-background {
 }
 
 body #page, body footer {
-    opacity: 0;
+    /*opacity: 0;*/
     -webkit-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
@@ -2436,7 +2447,7 @@ body.site-loaded #page, body.site-loaded footer {
     opacity: 1;
 }
 
-.site-loaded .site-overlay {
+.site-overlay {
     opacity: 0;
     z-index: -1000;
 }
@@ -2598,7 +2609,7 @@ footer .scroll-to {
 }
 
 .write-section .centered img {
-    width: 172px;
+    width: 258px;
 }
 
 .page-template-what-we-do .animation-words.title {
@@ -2626,7 +2637,7 @@ footer .scroll-to {
 }
 
 .engage-section .more-workshop {
-    width: 220px;
+    width: 330px;
 }
 
 .engage-section .scivizgroup-logo img {
@@ -2651,15 +2662,15 @@ footer .scroll-to {
 }
 
 .plan-section .what-we-do-img img {
-    width: 137px;
+    width: 205px;
 }
 
 .write-section .what-we-do-img img {
-    width: 180px;
+    width: 270px;
 }
 
 .visualize-section .what-we-do-img img {
-    width: 138px;
+    width: 207px;
 }
 
 .innovation-block .description-contact {
@@ -2691,6 +2702,10 @@ footer .scroll-to {
 
 .widget_text.widget.widget_custom_html {
     margin-right: 6px;
+}
+
+.video-wrapper {
+    position: relative;
 }
 
 .video-wrapper .arrow-down-img {
@@ -2818,7 +2833,7 @@ footer .scroll-to {
     display: none;
 }
 
-.home.page .first-section{
+.home.page .first-section {
     margin-bottom: -100px;
     padding-bottom: 140px;
 }
@@ -2885,9 +2900,10 @@ footer .scroll-to {
 
     }
 
-    .content-wrapper{
+    .content-wrapper {
         max-width: 96%;
     }
+
     .description {
         margin-bottom: 0px;
     }
@@ -2996,6 +3012,7 @@ footer .scroll-to {
     .burger_trigger {
         cursor: pointer;
     }
+
     .open_burger_trigger {
         width: 48px;
         float: left;

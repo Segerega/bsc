@@ -41,5 +41,5 @@ $weDos = get_posts($args); ?>
             </section>
         <?endforeach; ?>
     </div>
-<?php get_footer();
+    <?php get_footer();
 

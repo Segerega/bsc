@@ -21,36 +21,39 @@ $persons = get_posts($args);
                     <div class="slider-item-content clearfix">
                         <div class="person-image"
 
-                             <?
-                             $image_id = get_post_thumbnail_id($person->ID);
-                             $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
-                             $image_title = get_the_title($image_id);
-                             ?>
+                            <?
+                            $image_id = get_post_thumbnail_id($person->ID);
+                            $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
+                            $image_title = get_the_title($image_id);
+                            ?>
 
-                             alt="<?=$image_alt ? $image_alt : $image_title?>"
+                             alt="<?= $image_alt ? $image_alt : $image_title ?>"
                              style="background-image: url('<?php echo get_the_post_thumbnail_url($person->ID) ?>')">
                             <div class="person-image-second"
                                  style="background-image: url('<?php echo get_field('person_second_image', $person->ID)['url'] ?>')"
-                                 alt="<?=get_field('person_second_image', $person->ID)['title']? get_field('person_second_image', $person->ID)['alt']: get_field('person_second_image', $person->ID)['title']?>"
+                                 alt="<?= get_field('person_second_image', $person->ID)['title'] ? get_field('person_second_image', $person->ID)['alt'] : get_field('person_second_image', $person->ID)['title'] ?>"
                             >
                             </div>
                             <div class="person-image-second-overlay"></div>
                             <div class="person-image-third"
-                                 alt="<?=get_field('person_second_image', $person->ID)['title']? get_field('person_second_image', $person->ID)['alt']: get_field('person_second_image', $person->ID)['title']?>"
+                                 alt="<?= get_field('person_second_image', $person->ID)['title'] ? get_field('person_second_image', $person->ID)['alt'] : get_field('person_second_image', $person->ID)['title'] ?>"
                                  style="background-image: url('<?php echo get_field('person_third_image', $person->ID)['url'] ?>')">
                             </div>
                         </div>
 
                         <div class="text-slider-wrapper">
-                            <h3 class="person-name">
-                                <?= $person->post_title ?>
-                            </h3>
-                            <h4 class="person-title">
-                                <?= get_field('job_title', $person->ID) ?>
-                            </h4>
-                            <?= $person->post_content ?>
-                            <img src="<?= get_template_directory_uri() ?>/assets/images/close.svg " alt=""
-                                 class="close-icon">
+                            <div class="text-slider-block">
+
+                                <h3 class="person-name">
+                                    <?= $person->post_title ?>
+                                </h3>
+                                <h4 class="person-title">
+                                    <?= get_field('job_title', $person->ID) ?>
+                                </h4>
+                                <?= $person->post_content ?>
+                                <img src="<?= get_template_directory_uri() ?>/assets/images/close.svg " alt=""
+                                     class="close-icon">
+                            </div>
                         </div>
                     </div>
                     <div class="slider-item-footer">
@@ -74,12 +77,29 @@ $persons = get_posts($args);
     (function ($) {
         $(document).on('ready', function () {
             var slider = $(".person-slider");
+
+            function slideToShow() {
+
+                if ($(window).width() > 992 && !slider.is('.person-preview')) {
+                    return 6;
+                }
+
+                if ($(window).width() > 768 && !slider.is('.person-preview')) {
+                    return 3;
+                }
+
+                if ($(window).width() > 470 && !slider.is('.person-preview')) {
+                    return 2;
+                }
+                return 1;
+            }
+
             slider.slick({
                 vertical: false,
                 // dots: true,
                 // variableWidth: true,
                 slidesToScroll: 1,
-                slidesToShow: 6,
+                slidesToShow: slideToShow(),
                 // centerPadding: '60px',
                 lazyLoad: 'ondemand',
                 infinite: false,
@@ -88,36 +108,12 @@ $persons = get_posts($args);
                 "     alt=\"\">",
                 prevArrow: "<img class=\"slider-arrow arrow-left\" src=\"<?= get_template_directory_uri() ?>/assets/images/arrow-left.svg\"\n" +
                 "     alt=\"\">",
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
 
-
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
             })
 
             $('.slick-slide').click(function (e) {
 
-                if($(e.target).is(".close-icon")){
+                if ($(e.target).is(".close-icon")) {
                     return;
                 }
 
@@ -147,10 +143,15 @@ $persons = get_posts($args);
 
                 setTimeout(function () {
                     slider.removeClass('person-preview');
-                    slider.slick("slickSetOption", "slidesToShow", 6, false);
+                    slider.slick("slickSetOption", "slidesToShow", slideToShow(), false);
                     slider.slick('setPosition');
                 }, 500);
             });
+            $(window).resize(function () {
+                setTimeout(function () {
+                    slider.slick("slickSetOption", "slidesToShow", slideToShow(), false);
+                }, 500);
+            })
         });
 
 
