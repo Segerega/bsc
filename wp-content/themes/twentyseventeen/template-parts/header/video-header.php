@@ -49,10 +49,10 @@
             <?=$post->video_subtitle?>
         </div>
     </div>
-
     <a class='scroll-to scroll-to-first-section' data-scroll-to="#first-section">
         <img class='arrow-down-img' src="/wp-content/themes/twentyseventeen/assets/images/btn_arrow_down.svg" alt="">
     </a>
+
 
 <!--    <iframe width="853" height="480"-->
 <!--            src="https://www.youtube.com/embed/bM2uWzmVHoE?v=bM2uWzmVHoE?autoplay=1&loop=1&mute=1&playlist=bM2uWzmVHoE&color=#ffffff"-->

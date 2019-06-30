@@ -270,3 +270,27 @@
     }
 
 }
+@media screen and (max-width: 425px) {
+
+
+    .scroll-to {
+        bottom: 10%;
+    }
+    .text-slider-wrapper .close-icon {
+        position: absolute;
+        top: 12px;
+        right: 8px;
+        width: 26px;
+        height: 32px;
+        z-index: 100;
+    }
+    .text-slider-wrapper h3, .text-slider-wrapper h4 {
+        font-size: 25px;
+    }
+    .text-slider-wrapper h4 {
+        font-size: 20px;
+    }
+    .text-slider-wrapper p {
+        font-size: 10px;
+    }
+}

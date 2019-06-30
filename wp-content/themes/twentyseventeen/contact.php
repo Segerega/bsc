@@ -17,7 +17,7 @@ get_header(); ?>
                 <div class="title-contact-map">new york</div>
                 <div class="description-contact">250 Hudson Street<br>New York. NY 10013. USA<br>+212.704.1000</div>
                 <div class="map-new-york-img ">
-                    <img class="img-map ny-map-new" src="/wp-content/themes/twentyseventeen/assets/images/NYC_map-new-ph.jpg" alt="">
+                    <img class="img-map ny-map-new" src="/wp-content/themes/twentyseventeen/assets/images/map101.jpg" alt="">
                     <a class="link" href="#"></a>
                 </div>
             </div>
@@ -27,7 +27,7 @@ get_header(); ?>
                 <div class="description-contact">105 Victoria Street<br>London SWIE 6QT. UK<br>+7.302.80346801</div>
 
                 <div class="map-london-img">
-                    <img class="img-map london-map-new" src="/wp-content/themes/twentyseventeen/assets/images/LondonMap-new-ph.jpg"
+                    <img class="img-map london-map-new" src="/wp-content/themes/twentyseventeen/assets/images/map10.jpg"
                          alt="">
                 </div>
             </div>

@@ -11,6 +11,8 @@
             $('.menu-wrapper').addClass('open');
         });
 
+
+
         $('.scroll-to').click(function () {
             var $this = $(this),
                 $scrollToElement = $($this.data('scroll-to'));
@@ -46,6 +48,7 @@
             $('body').addClass('site-loaded');
         });
 
+<<<<<<< Updated upstream
         $('.link-ny').on('click', function () {
             // $('.map-wrapper').toggleClass('open-map open-ny');
         });
@@ -80,6 +83,11 @@ console.log('w1');
         $('.section-with-background .reference').css({top:-$('#masthead').height()+10})
 
     }
+=======
+        addAboutBlank();
+    });
+
+>>>>>>> Stashed changes
 
     function addAboutBlank() {
 
