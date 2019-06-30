@@ -30,6 +30,8 @@
     }
 
     function onPlayerStateChange(el) {
+        el.target.setPlaybackQuality('hd1080');
+
         if(el.data === 1) {
             console.log('loaded 11');
             jQuery('body').addClass('video-loaded');
