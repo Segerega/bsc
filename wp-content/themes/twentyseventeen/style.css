@@ -2846,6 +2846,9 @@ footer .scroll-to {
     margin-bottom: -100px;
     padding-bottom: 140px;
 }
+.video-overlay{
+    background-position: center;
+}
 
 
 @media only screen and (min-width: 1300px) {
@@ -3070,7 +3073,7 @@ footer .scroll-to {
     }
 
     .content-wrapper p {
-        margin: 0 10px;
+        margin: 0 10px 0 0;
     }
 
     .col-sm-12.col-md-4.table-contact.position.contact-flex-column {
@@ -3145,7 +3148,7 @@ footer .scroll-to {
 
     #first-section {
         padding: 30px 0 30px;
-        margin-bottom: -30px;
+        margin-bottom: 26px;
     }
 
     .content-wrapper {
@@ -3155,11 +3158,6 @@ footer .scroll-to {
     .second-section-footer {
         display: none;
     }
-
-    /*.animation-words.title {*/
-        /*font-size: 55px;*/
-        /*!* margin-bottom: 105px; *!*/
-    /*}*/
 
     .site-overlay {
         display: none;
@@ -3211,12 +3209,21 @@ footer .scroll-to {
     .copyright {
         font-size: 11px;
     }
+    .title-wrapper .title-description {
+        font-size: 21px;
+    }
+    .slider-arrow {
+        height: 45px;
+    }
 }
 
 
 @media screen and (max-width: 680px){
 
     .page-template-what-we-do .animation-words.title {
+        font-size: 35px;
+    }
+    .animation-words.title {
         font-size: 35px;
     }
     .title-wrapper .title-description {
@@ -3233,6 +3240,17 @@ footer .scroll-to {
     }
     .open_burger_trigger {
         width: 37px;
+    }
+    .plan-section,
+    .write-section,
+    .engage-section,
+    .visualize-section{
+        background-size: 200%;
+        background-position: center
+    }
+    #about-section{
+        background-size: 200%;
+        background-position: center
     }
 }
 @media screen and (max-width: 480px){
@@ -3252,11 +3270,24 @@ footer .scroll-to {
     .open_burger_trigger {
         width: 37px;
     }
+    .slider-arrow {
+        height: 45px;
+    }
+    .slider-arrow.arrow-left {
+        left: -70px;
+    }
+    .slider-arrow.arrow-right {
+        right: -70px;
+    }
+
 }
 @media screen and (max-width: 425px) {
+    .plan-section .centered img {
+        max-height: 39px;
+    }
 
-    .page-template-what-we-do .animation-words.title  {
-        font-size: 28px;
+    .page-template-what-we-do .animation-words.title {
+        font-size: 27px;
         margin-top: 0;
     }
     .title-wrapper .title-description {
@@ -3315,7 +3346,7 @@ footer .scroll-to {
     .innovation-block {
         padding: 14px 9px 0px;
         position: relative;
-        margin: 0;
+        margin: 0 -2%;
     }
 
     .scivizgroup-logo {
@@ -3369,7 +3400,7 @@ footer .scroll-to {
     }
 
     .engage-section .more-workshop {
-        width: 143px;
+        width: 137px;
     }
 
     .engage-section .centered img {
@@ -3399,14 +3430,7 @@ footer .scroll-to {
     .second-section-footer {
         display: none;
     }
-    .animation-words.title {
-        font-size: 36px;
-        margin-bottom: 0px;
-    }
 
-    .title-wrapper .title-description {
-        font-size: 12px;
-    }
 }
 @media screen and (max-width: 321px){
     .animation-words.title {
@@ -3496,7 +3520,38 @@ footer .scroll-to {
         right: 2px;
         cursor: pointer;
     }
-
+}
+@media (orientation: landscape) and (max-width: 992px){
+    .animation-words.title,
+    .page-template-what-we-do .animation-words.title{
+        font-size: 54px;
+    }
+    .video-wrapper {
+        height: 100vh;
+    }
+    .logo-img {
+        width: 184px;
+    }
+    .open_burger_trigger {
+        width: 31px;
+    }
+    .page-template-what-we-do .title-wrapper .title-description {
+        font-size: 10px;
+    }
+    .close_burger_trigger {
+        width: 30px;
+         margin-top: 0;
+        float: right;
+         margin-right: 0;
+    }
+    #top-menu > li > a {
+        text-transform: uppercase;
+        color: #ffff;
+        font-size: 17px;
+    }
+    .menu-wrapper{
+        max-width: 100%;
+    }
 }
 
 
